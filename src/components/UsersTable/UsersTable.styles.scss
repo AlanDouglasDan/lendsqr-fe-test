@@ -1,0 +1,158 @@
+.paginatedTable {
+  background-color: #fff;
+  padding: 30px;
+  border: 1px solid rgba(33, 63, 125, 0.06);
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 4px;
+  overflow-x: auto;
+  //   max-height: 640px;
+  //   overflow-y: scroll;
+}
+
+table {
+  white-space: nowrap;
+}
+
+.ellipsisIcon {
+  color: #545f7d;
+}
+
+.py-22px {
+  padding-top: 22px !important;
+  padding-bottom: 22px !important;
+}
+
+.tableHeader {
+  color: #545f7d;
+  font-weight: 600;
+  border: 0;
+  text-transform: uppercase;
+}
+
+tbody {
+  color: #545f7d;
+}
+
+.form-dropdown {
+  width: 270px !important;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.light-yellow-btn {
+  background-color: rgba(233, 178, 0, 0.1);
+  border-radius: 100px;
+  padding: 7px 18px;
+  color: #e9b200;
+}
+
+.light-green-btn {
+  background-color: rgba(57, 205, 98, 0.06);
+  border-radius: 100px;
+  padding: 7px 18px;
+  color: #39cd62;
+}
+
+.light-grey-btn {
+  background-color: rgba(84, 95, 125, 0.06);
+  border-radius: 100px;
+  padding: 7px 18px;
+  color: #545f7d;
+}
+
+.light-red-btn {
+  background-color: rgba(228, 3, 59, 0.1);
+  border-radius: 100px;
+  padding: 7px 18px;
+  color: #e4033b;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.dropdown-menu {
+  border: 1px solid rgba(84, 95, 125, 0.04);
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 4px;
+  width: 180px;
+  position: absolute;
+}
+
+.dropdown-item {
+  cursor: pointer;
+}
+
+.rowsPerPageBtn {
+  font-size: 14px;
+  color: #545f7d;
+  font-weight: 500;
+  background-color: rgba(33, 63, 125, 0.1);
+  padding: 0 12px;
+  height: 30px;
+  border-radius: 4px;
+  border: none;
+}
+
+.form-dropdown .form-label {
+  text-transform: capitalize;
+}
+
+.mt-20px {
+  margin-top: 20px;
+}
+
+.operandButton {
+  background-color: rgba(33, 63, 125, 0.1);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  border: none;
+}
+
+.paginationNavigator {
+  color: #545f7d;
+  margin: 0 10px;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.activePaginationNavigator {
+  opacity: 1;
+}
+
+.form-label {
+  color: #545f7d;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.btn-outline {
+  border: 1px solid #545f7d;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #545f7d;
+  height: 40px;
+}
+
+.btn-themed {
+  background-color: #39cdcc;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  height: 40px;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 14px;
+}
