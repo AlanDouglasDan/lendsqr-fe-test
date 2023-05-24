@@ -1,14 +1,11 @@
-import {
-  ProfileUserIcon,
-  FullStarIcon,
-  EmptyStarIcon,
-} from "../../components/icons";
+import { UserInterface } from "types/user.types";
+import { ProfileUserIcon, FullStarIcon, EmptyStarIcon } from "components/icons";
 import "./UserProfileCard.styles.scss";
 
 type Props = {
-  data: any;
+  data: UserInterface;
   activeTab: number;
-  setActiveTab: any;
+  setActiveTab: (tab: number) => void;
 };
 
 const UserProfileCard: React.FC<Props> = ({

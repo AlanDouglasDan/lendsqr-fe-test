@@ -9,14 +9,14 @@ import {
 import "./ActionMenu.styles.scss";
 
 type Props = {
-  setStatusesArray: React.Dispatch<any>;
-  statusesArray: any;
-  status: string;
+  setStatusesArray: (data: any) => void;
+  statusesArray: Array<JSX.Element>;
+  status: JSX.Element;
   userId: string;
   index: string;
-  blacklisted: any;
-  active: any;
-  inactive: any;
+  blacklisted: JSX.Element;
+  active: JSX.Element;
+  inactive: JSX.Element;
 };
 
 const ActionMenu: React.FC<Props> = ({
