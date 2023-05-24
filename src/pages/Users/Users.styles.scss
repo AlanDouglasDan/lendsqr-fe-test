@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+.usersBody {
+  background-color: #fbfbfb;
+}
+
+.usersBody .form-control,
+.usersBody .input-group-text {
+  height: 40px;
+  border-width: 2px;
+}
+
+.bg-theme {
+  background-color: #39cdcc;
+  margin-left: 0px !important;
+}
+
+.content {
+  padding: 60px;
+  width: calc(100% - 283px);
+  height: calc(100vh - 100px);
+  overflow-y: scroll;
+}
+
+.headerText {
+  font-size: 24px;
+  color: #213f7d;
+  font-weight: 500;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 26px;
+  margin: 40px 0;
+}

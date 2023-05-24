@@ -1,0 +1,68 @@
+.welcomeText {
+    font-size: 40px;
+    font-weight: 700;
+    color: #213f7d;
+  }
+  
+  .welcomeText2 {
+    font-size: 20px;
+    font-weight: 300;
+    color: #545f7d;
+    margin-bottom: 60px;
+  }
+  
+  .minWidth {
+    min-width: 447px;
+  }
+  
+  .border-right-0 {
+    border-right: 0px;
+  }
+  
+  .border-left-0 {
+    border-left: 0px;
+  }
+  
+  .showText {
+    color: #39cdcc !important;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  
+  .form-control,
+  .input-group-text {
+    border-color: rgba(84, 95, 125, 0.15);
+    padding: 16px;
+    color: #545f7d;
+    border-width: 2px;
+  }
+  
+  .form-control::placeholder {
+    color: #545f7d;
+    font-size: 14px;
+    opacity: 0.6;
+  }
+  
+  .form-control:focus {
+    box-shadow: none;
+    border-color: rgba(84, 95, 125, 0.15);
+  }
+  
+  .submitButton {
+    background-color: #39cdcc;
+    height: 48px;
+    border: none;
+    border-radius: 8px;
+    letter-spacing: 0.1em;
+  }
+  
+  .forgotPassword {
+    color: #39cdcc;
+    margin-bottom: 30px;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  
