@@ -1,0 +1,33 @@
+.rowsPerPageBtn {
+  font-size: 14px;
+  color: #545f7d;
+  font-weight: 500;
+  background-color: rgba(33, 63, 125, 0.1);
+  padding: 0 12px;
+  height: 30px;
+  border-radius: 4px;
+  border: none;
+}
+
+.operandButton {
+  background-color: rgba(33, 63, 125, 0.1);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  border: none;
+}
+
+.paginationNavigator {
+  color: #545f7d;
+  margin: 0 10px;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.activePaginationNavigator {
+  opacity: 1;
+}

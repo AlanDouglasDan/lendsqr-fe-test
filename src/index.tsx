@@ -1,15 +1,19 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import './styles.scss';
-import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
+
+import reportWebVitals from "./reportWebVitals";
 import AppRouter from "./routes";
+import './styles.scss';
+import "react-toastify/dist/ReactToastify.css";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
+    <ToastContainer />
     <BrowserRouter>
       <AppRouter />
     </BrowserRouter>

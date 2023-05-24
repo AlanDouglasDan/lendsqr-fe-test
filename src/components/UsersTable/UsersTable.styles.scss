@@ -85,17 +85,6 @@ tbody {
   cursor: pointer;
 }
 
-.rowsPerPageBtn {
-  font-size: 14px;
-  color: #545f7d;
-  font-weight: 500;
-  background-color: rgba(33, 63, 125, 0.1);
-  padding: 0 12px;
-  height: 30px;
-  border-radius: 4px;
-  border: none;
-}
-
 .form-dropdown .form-label {
   text-transform: capitalize;
 }
@@ -104,55 +93,6 @@ tbody {
   margin-top: 20px;
 }
 
-.operandButton {
-  background-color: rgba(33, 63, 125, 0.1);
-  border-radius: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 24px;
-  height: 24px;
-  cursor: pointer;
-  border: none;
-}
-
-.paginationNavigator {
-  color: #545f7d;
-  margin: 0 10px;
-  opacity: 0.6;
-  cursor: pointer;
-}
-
-.activePaginationNavigator {
-  opacity: 1;
-}
-
-.form-label {
-  color: #545f7d;
-  font-weight: 500;
-  font-size: 14px;
-}
-
-.btn-outline {
-  border: 1px solid #545f7d;
-  border-radius: 8px;
-  font-size: 14px;
-  font-weight: 600;
-  color: #545f7d;
-  height: 40px;
-}
-
-.btn-themed {
-  background-color: #39cdcc;
-  border-radius: 8px;
-  font-size: 14px;
-  font-weight: 600;
-  color: #fff;
-  height: 40px;
-}
-
-.grid-2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 14px;
+.no-underline {
+  text-decoration: none;
 }

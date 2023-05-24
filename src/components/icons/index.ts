@@ -28,3 +28,7 @@ export { default as EyeIcon } from "./eye";
 export { default as DeleteUserIcon } from "./delete-user";
 export { default as ActivateUserIcon } from "./activate-user";
 export { default as LogoutIcon } from "./logout";
+export { default as BackIcon } from "./back";
+export { default as ProfileUserIcon } from "./profile-user";
+export { default as FullStarIcon } from "./full-star";
+export { default as EmptyStarIcon } from "./empty-star";

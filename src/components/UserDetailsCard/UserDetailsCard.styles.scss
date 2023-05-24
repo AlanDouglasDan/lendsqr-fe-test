@@ -1,0 +1,32 @@
+.information-card {
+    background: #ffffff;
+    border: 1px solid rgba(33, 63, 125, 0.06);
+    box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+    border-radius: 4px;
+    padding: 30px;
+  }
+  
+  .header16 {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .dark-blue {
+    color: #213f7d;
+  }
+  
+  .dim-grey {
+    color: #545f7d;
+  }
+  
+  .grid-5 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    //   grid-gap: 20px;
+  }
+  
+  .horizontal-line {
+    border-bottom: 1px solid rgba(33, 63, 125, 0.1);
+    margin: 30px 0;
+  }
+  
