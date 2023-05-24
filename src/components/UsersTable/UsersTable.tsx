@@ -1,18 +1,18 @@
-import { useEffect, useState } from "react";
-import axios from "axios";
+import { useState } from "react";
 
 // import useFetch from "../../hooks/useFetch";
 import "./UsersTable.styles.scss";
 import FilterForm from "components/FilterForm/FilterForm";
 import ActionMenu from "components/ActionMenu/ActionMenu";
 import Pagination from "components/Pagination/Pagination";
+import { UserInterface, FilterInterface } from "types/user.types";
 
 const pending = <span className="light-yellow-btn">Pending</span>;
 const active = <span className="light-green-btn">Active</span>;
 const inactive = <span className="light-grey-btn">Inactive</span>;
 const blacklisted = <span className="light-red-btn">Blacklisted</span>;
 
-const initialState = {
+const initialState: FilterInterface = {
   organization: "",
   username: "",
   email: "",
@@ -30,14 +30,17 @@ const tableHeaders = [
   "Status",
 ];
 
-const UsersTable = () => {
-  const [data, setData] = useState<any>(
-    JSON.parse(localStorage.getItem("users") || "[]")
-  );
+type Props = {
+  data: UserInterface[];
+  setData: (data: any) => void;
+  fetchUsers: () => void;
+};
+
+const UsersTable: React.FC<Props> = ({ data, setData, fetchUsers }) => {
   const [rowsPerPage, setRowsPerPage] = useState<number>(10);
   const [page, setPage] = useState<number>(1);
 
-  const [filters, setFilters] = useState<any>(initialState);
+  const [filters, setFilters] = useState<FilterInterface>(initialState);
 
   // populate the statuses array randomly with statuses of pending, active, inactive and blacklisted for each user
   const _statusesArray = data.map(() => {
@@ -46,31 +49,15 @@ const UsersTable = () => {
     if (randomStatus === 0) status = pending;
     else if (randomStatus === 1) status = active;
     else if (randomStatus === 2) status = inactive;
-    else if (randomStatus === 3) status = blacklisted;
+    else status = blacklisted;
     return status;
   });
 
-  const [statusesArray, setStatusesArray] = useState<any>(_statusesArray);
-
-  const fetchUsers = async () => {
-    axios
-      .get("https://6270020422c706a0ae70b72c.mockapi.io/lendsqr/api/v1/users")
-      .then((_data) => {
-        setData(_data.data);
-        localStorage.setItem("users", JSON.stringify(_data.data));
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  };
-
-  useEffect(() => {
-    if (data.length === 0) fetchUsers();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  const [statusesArray, setStatusesArray] =
+    useState<Array<JSX.Element>>(_statusesArray);
 
   // look through all the _data and get the organizations
-  const _organizations = data?.map((item: any) => {
+  const _organizations: String[] = data?.map((item: any) => {
     return item.orgName;
   });
 
@@ -252,7 +239,7 @@ const UsersTable = () => {
         page={page}
         setPage={setPage}
         numberOfPages={numberOfPages}
-        numRecords={data.length}
+        numRecords={String(data.length)}
         rowsPerPage={rowsPerPage}
         setRowsPerPage={setRowsPerPage}
       />

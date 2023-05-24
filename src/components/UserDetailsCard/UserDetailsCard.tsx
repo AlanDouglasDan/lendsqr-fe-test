@@ -1,7 +1,8 @@
+import { UserInterface } from "types/user.types";
 import "./UserDetailsCard.styles.scss";
 
 type Props = {
-  data: any;
+  data: UserInterface;
 };
 
 const UserDetailsCard: React.FC<Props> = ({ data }) => {

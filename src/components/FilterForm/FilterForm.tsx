@@ -1,7 +1,16 @@
-import { FilterIcon } from "../../components/icons";
+import { FilterInterface } from "types/user.types";
+import { FilterIcon } from "components/icons";
 import "./FilterForm.styles.scss";
 
-const FilterForm: React.FC<any> = ({
+export interface Props {
+  setFilters: (filters: any) => void;
+  filters: FilterInterface;
+  _organizations: String[];
+  runFilterFunction: () => void;
+  resetFilterFunction: () => void;
+}
+
+const FilterForm: React.FC<Props> = ({
   setFilters,
   filters,
   _organizations,

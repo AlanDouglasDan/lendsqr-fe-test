@@ -9,10 +9,11 @@ import "./User.styles.scss";
 import UserProfileCard from "components/UserProfileCard/UserProfileCard";
 import UserDetailsCard from "components/UserDetailsCard/UserDetailsCard";
 import Loader from "components/Loader/Loader";
+import { UserInterface } from "types/user.types";
 
 const User = (): JSX.Element => {
   const [activeTab, setActiveTab] = useState<number>(0); // [0, 1, 2, 3, 4, 5]
-  const [data, setData] = useState<any>(null); // [0, 1, 2, 3, 4, 5
+  const [data, setData] = useState<UserInterface | null>(null);
 
   const { id } = useParams<string>();
 
@@ -29,7 +30,7 @@ const User = (): JSX.Element => {
       });
   }, [id]);
 
-  console.log(data);
+  // console.log(data);
 
   return (
     <div className="usersBody vh-100">
