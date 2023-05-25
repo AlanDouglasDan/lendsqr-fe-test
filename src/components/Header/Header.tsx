@@ -6,7 +6,7 @@ import "./Header.styles.scss";
 const Header = () => {
   return (
     <div className="header row m-0">
-      <div className="col-md-6 d-flex align-items-center justify-content-between px-0">
+      <div className="col-md-6 d-flex align-items-center justify-content-between px-0 d-med-none">
         <Link to="/" className="no-underline text-dark">
           <div className="d-flex align-items-start">
             <img src={images.union} alt="Union" className="unionImage" />
@@ -14,7 +14,7 @@ const Header = () => {
           </div>
         </Link>
 
-        <div className="input-group my-4">
+        <div className="input-group my-4 border-0">
           <input
             type="text"
             className="form-control border-right-0"
@@ -27,7 +27,7 @@ const Header = () => {
         </div>
       </div>
 
-      <div className="col-md-6 d-flex align-items-center justify-content-end px-0">
+      <div className="col-md-6 d-flex align-items-center justify-content-end px-0 d-med-none">
         <span className="docsText cursor-pointer">Docs</span>
 
         <i className="fa fa-bell-o bellIcon cursor-pointer" />
@@ -41,6 +41,21 @@ const Header = () => {
         <span className="profileText">Adedeji</span>
 
         <i className="fa fa-caret-down angleIcon cursor-pointer" />
+      </div>
+
+      <div className="d-none d-med-flex align-items-center justify-content-between">
+        <Link to="/" className="no-underline text-dark">
+          <div className="d-flex align-items-start">
+            <img src={images.union} alt="Union" className="unionImage" />
+            <img src={images.lendsqr} alt="Lendsqr" className="lendsqrImage" />
+          </div>
+        </Link>
+
+        <div className="hamburger">
+          <span className="bar"></span>
+          <span className="bar"></span>
+          <span className="bar"></span>
+        </div>
       </div>
     </div>
   );

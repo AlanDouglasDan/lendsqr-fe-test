@@ -1,6 +1,8 @@
+@use "variables";
+
 .text16 {
   font-size: 16px;
-  color: #545f7d;
+  color: variables.$dim-grey;
 }
 
 .outline-btn {
@@ -14,22 +16,94 @@
 }
 
 .red-outline {
-  border: 1px solid #e4033b;
-  color: #e4033b;
+  border: 1px solid variables.$red;
+  color: variables.$red;
 }
 
 .green-outline {
-  border: 1px solid #39cdcc;
-  color: #39cdcc;
+  border: 1px solid variables.$green;
+  color: variables.$green;
 }
 
 .profileName {
   font-size: 22px;
   font-weight: 500;
-  color: #212f7d;
+  color: variables.$dark-blue;
 }
 
 .profileBvn {
   font-size: 14px;
-  color: #545f7d;
+  color: variables.$dim-grey;
+}
+
+// for screens smaller than 1500px
+@media (max-width: 1350px) {
+  .grid-5 {
+    grid-template-columns: 1fr 1fr 1fr 1fr !important;
+  }
+
+  .content {
+    padding: 30px;
+  }
+}
+
+// for screens smaller than 1200px
+@media (max-width: 1200px) {
+  .grid-5 {
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  .profile-card .d-lge-block,
+  .usersBody .d-lge-block,
+  .centralize-lge {
+    display: grid !important;
+    justify-content: center !important;
+    place-items: center;
+  }
+
+  .usersBody .d-lge-block {
+    grid-gap: 15px;
+  }
+
+  .verticalLine {
+    display: none;
+  }
+
+  .tierText {
+    margin-bottom: 0 !important;
+  }
+
+  .navMenu {
+    margin-top: 15px;
+    padding-bottom: 0;
+  }
+}
+
+// for screens smaller than 992px
+@media (max-width: 992px) {
+  .grid-5 {
+    grid-template-columns: 1fr !important;
+  }
+  .information-card .grid-4 {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+// for screens smaller than 500px
+@media (max-width: 500px) {
+  .d-xsl-block {
+    display: grid !important;
+    justify-content: center !important;
+    place-items: center;
+    grid-gap: 10px;
+  }
+
+  .outline-btn {
+    margin: 0 !important;
+    width: 100% !important;
+  }
+
+  .navMenu {
+    width: 130% !important;
+  }
 }

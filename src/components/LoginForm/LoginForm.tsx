@@ -21,12 +21,12 @@ const LoginForm = () => {
   };
 
   return (
-    <div>
+    <div className="w-100">
       <div className="welcomeText">Welcome!</div>
 
       <div className="welcomeText2">Enter details to login.</div>
 
-      <div className="minWidth">
+      <div className="minWidth w-lg-100">
         <div className="form-group">
           <input
             type="email"
@@ -37,18 +37,19 @@ const LoginForm = () => {
             value={email}
           />
         </div>
+
         <div className="form-group">
-          <div className="input-group my-4">
+          <div className="input-group my-4 form-control p-0">
             <input
               type={!showPassword ? "password" : "text"}
-              className="form-control border-right-0"
+              className="form-control border-0"
               placeholder="Password"
               aria-label="password"
               onChange={(e) => setPassword(e.target.value)}
               value={password}
             />
             <span
-              className="input-group-text bg-white showText m-0 border-left-0"
+              className="input-group-text bg-white showText m-0 border-0"
               onClick={() => setShowPassword(!showPassword)}
             >
               {!showPassword ? "SHOW" : "HIDE"}

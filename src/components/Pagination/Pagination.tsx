@@ -18,7 +18,7 @@ const Pagination: React.FC<Props> = ({
   numberOfPages,
 }) => {
   return (
-    <div className="d-flex align-items-center justify-content-between mt-20px">
+    <div className="d-flex align-items-center justify-content-between mt-20px center-grid">
       <div className="d-flex align-items-center">
         <div>Showing</div>
         <div className="dropdown">

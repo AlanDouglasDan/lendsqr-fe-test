@@ -6,27 +6,32 @@ import "./Login.styles.scss";
 const LogIn = () => {
   return (
     <div className="loginBody">
-      <div className="row vh-100">
-        <div
-          className="col-md-6 d-flex align-items-center justify-content-center px-5"
-          style={{ backgroundColor: "#fcfcfc" }}
-        >
-          <div className="d-flex align-items-start position-absolute logoImage">
-            <img src={images.union} alt="Union" className="unionImage" />
-            <img src={images.lendsqr} alt="Lendsqr" className="lendsqrImage" />
-          </div>
+      <div className="grid-2 vh-100" style={{ gridGap: 0 }}>
+        <div className="d-flex align-items-center justify-content-center px-0 d-med-none">
+          <div className="leftLoginSide">
+            <div className="d-flex align-items-start position-absolute logoImage">
+              <img src={images.union} alt="Union" className="unionImage" />
+              <img
+                src={images.lendsqr}
+                alt="Lendsqr"
+                className="lendsqrImage"
+              />
+            </div>
 
-          <img
-            src={images.welcome}
-            alt="Welcome"
-            className="welcomeImage img-fluid"
-          />
+            <img
+              src={images.welcome}
+              alt="Welcome"
+              className="welcomeImage img-fluid"
+            />
+          </div>
         </div>
 
-        <div
-          className="col-md-6 d-flex align-items-center"
-          style={{ paddingLeft: "100px" }}
-        >
+        <div className="d-med-flex d-none align-items-start position-absolute logoImage">
+          <img src={images.union} alt="Union" className="unionImage" />
+          <img src={images.lendsqr} alt="Lendsqr" className="lendsqrImage" />
+        </div>
+
+        <div className="d-flex align-items-center justify-content-center-lg loginFormContainer w-100">
           <LoginForm />
         </div>
       </div>

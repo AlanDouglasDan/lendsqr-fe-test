@@ -1,24 +1,26 @@
+@use "variables";
+
 .form-label {
-  color: #545f7d;
+  color: variables.$dim-grey;
   font-weight: 500;
   font-size: 14px;
 }
 
 .btn-outline {
-  border: 1px solid #545f7d;
+  border: 1px solid variables.$dim-grey;
   border-radius: 8px;
   font-size: 14px;
   font-weight: 600;
-  color: #545f7d;
+  color: variables.$dim-grey;
   height: 40px;
 }
 
 .btn-themed {
-  background-color: #39cdcc;
+  background-color: variables.$green;
   border-radius: 8px;
   font-size: 14px;
   font-weight: 600;
-  color: #fff;
+  color: variables.$white;
   height: 40px;
 }
 

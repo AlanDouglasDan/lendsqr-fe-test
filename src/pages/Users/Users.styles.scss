@@ -1,7 +1,9 @@
+@use "variables";
+
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 
 .usersBody {
-  background-color: #fbfbfb;
+  background-color: variables.$light-grey;
 }
 
 .usersBody .form-control,
@@ -11,7 +13,7 @@
 }
 
 .bg-theme {
-  background-color: #39cdcc;
+  background-color: variables.$green;
   margin-left: 0px !important;
 }
 
@@ -24,7 +26,7 @@
 
 .headerText {
   font-size: 24px;
-  color: #213f7d;
+  color: variables.$dim-grey;
   font-weight: 500;
 }
 
@@ -33,4 +35,71 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 26px;
   margin: 40px 0;
+}
+
+// for screens smaller than 1300px
+@media (max-width: 1450px) {
+  .usersBody .input-group {
+    width: 300px;
+  }
+}
+
+// for screens smaller than 1200px
+@media (max-width: 1200px) {
+  .grid-4 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .center-grid {
+    justify-content: center !important;
+    display: grid !important;
+    place-items: center;
+    grid-gap: 10px;
+  }
+
+  .lendsqrImage {
+    width: 90px;
+  }
+
+  .unionImage {
+    width: 15px;
+  }
+}
+
+// for screens smaller than 992px
+@media (max-width: 992px) {
+  .lendsqrImage {
+    width: 80px;
+  }
+
+  .usersBody .input-group {
+    width: 200px;
+  }
+}
+
+// for screens smaller than 768px
+@media (max-width: 769px) {
+  .content {
+    width: 100%;
+  }
+
+  .d-med-none {
+    display: none !important;
+  }
+
+  .d-med-flex {
+    display: flex !important;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+// for screens smaller than 500px
+@media (max-width: 500px) {
+  .grid-4 {
+    grid-template-columns: 1fr;
+  }
 }

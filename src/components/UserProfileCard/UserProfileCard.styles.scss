@@ -1,5 +1,7 @@
+@use "variables";
+
 .profile-card {
-  background: #ffffff;
+  background: variables.$white;
   border: 1px solid rgba(33, 63, 125, 0.06);
   box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
   border-radius: 4px;
@@ -8,7 +10,7 @@
   padding-right: 30px;
   margin-top: 40px;
   margin-bottom: 30px;
-  height: 210px;
+  // height: 210px;
 }
 
 .profileImageContainer {
@@ -28,7 +30,7 @@
 .tierText {
   font-size: 14px;
   font-weight: 500;
-  color: #545f7d;
+  color: variables.$dim-grey;
   margin-bottom: 10px;
 }
 
@@ -37,10 +39,18 @@
   padding-left: 20px;
   padding-right: 20px;
   cursor: pointer;
+  align-items: end;
+  display: flex;
+  text-align: center;
+  width: 200%;
 }
 
 .tabActive {
-  border-bottom: 2px solid #39cdcc;
-  color: #39cdcc;
+  border-bottom: 2px solid variables.$green;
+  color: variables.$green;
   padding-bottom: 8px;
+}
+
+.tabNav {
+  margin-top: 50px;
 }

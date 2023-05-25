@@ -41,17 +41,17 @@ const UserDetailsCard: React.FC<Props> = ({ data }) => {
         </div>
 
         <div>
-          <div className="text-uppercase dim-grey mt-30px">Marital status</div>
+          <div className="text-uppercase dim-grey">Marital status</div>
           <div className="header16 dim-grey mt-1">Single</div>
         </div>
 
         <div>
-          <div className="text-uppercase dim-grey mt-30px">Children</div>
+          <div className="text-uppercase dim-grey">Children</div>
           <div className="header16 dim-grey mt-1">None</div>
         </div>
 
         <div>
-          <div className="text-uppercase dim-grey mt-30px">
+          <div className="text-uppercase dim-grey">
             Type of residence
           </div>
           <div className="header16 dim-grey mt-1">Parent’s Apartment</div>

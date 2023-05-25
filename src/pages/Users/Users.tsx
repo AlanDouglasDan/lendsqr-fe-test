@@ -41,7 +41,9 @@ const Users = () => {
       <Header />
 
       <div className="d-flex">
-        <Sidebar />
+        <div className="d-med-none">
+          <Sidebar />
+        </div>
 
         <div className="content">
           <div className="headerText">Users</div>
