@@ -1,7 +1,9 @@
+@use "variables";
+
 .sidebar {
   height: calc(100vh - 100px);
   width: 283px;
-  background-color: #fff;
+  background-color: variables.$white;
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.04);
   overflow-y: scroll;
   padding-top: 40px;
@@ -10,7 +12,7 @@
 
 .sidebarText {
   font-size: 16px;
-  color: #213f7d;
+  color: variables.$dark-blue;
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -22,7 +24,7 @@
 .sidebar-header {
   font-size: 12px;
   font-weight: 500;
-  color: #545f7d;
+  color: variables.$dim-grey;
   margin-bottom: 10px;
   margin-top: 41px;
 }
@@ -37,7 +39,7 @@
   background-color: rgba(57, 205, 204, 0.06);
   padding-top: 10px;
   padding-bottom: 10px;
-  border-left: 3px solid #39cdcc;
+  border-left: 3px solid variables.$green;
   padding-left: 27px;
 }
 
@@ -51,12 +53,12 @@
 
 .text14 {
   font-size: 14px;
-  color: #213f7d;
+  color: variables.$dark-blue;
   margin-top: 40px;
 }
 
 .separator {
   margin-top: 70px;
   opacity: 0.1;
-  border: 1px solid #213f7d;
+  border: 1px solid variables.$dark-blue;
 }

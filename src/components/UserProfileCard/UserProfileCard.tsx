@@ -15,7 +15,7 @@ const UserProfileCard: React.FC<Props> = ({
 }) => {
   return (
     <div className="profile-card d-flex flex-column justify-content-between">
-      <div className="d-flex align-items-center">
+      <div className="d-flex align-items-center d-lge-block">
         <div className="profileImageContainer d-flex align-items-center justify-content-center">
           {data.profile.avatar ? (
             <img
@@ -28,7 +28,7 @@ const UserProfileCard: React.FC<Props> = ({
           )}
         </div>
 
-        <div>
+        <div className="centralize-lge">
           <div className="profileName">
             {data.profile.firstName} {data.profile.lastName}
           </div>
@@ -37,7 +37,7 @@ const UserProfileCard: React.FC<Props> = ({
 
         <div className="verticalLine" />
 
-        <div>
+        <div className="my-4 centralize-lge">
           <div className="tierText">User's Tier</div>
           <div className="d-flex" style={{ gap: "6px" }}>
             <FullStarIcon />
@@ -48,7 +48,7 @@ const UserProfileCard: React.FC<Props> = ({
 
         <div className="verticalLine" />
 
-        <div>
+        <div className="centralize-lge">
           <div className="profileName">₦{data.accountBalance}</div>
           <div className="profileBvn" style={{ color: "#213F7D" }}>
             {data.accountNumber}/Providus Bank
@@ -56,39 +56,39 @@ const UserProfileCard: React.FC<Props> = ({
         </div>
       </div>
 
-      <div className="tabNav d-flex align-items-center justify-content-between">
+      <div className="tabNav d-flex justify-content-between d-lge-block">
         <div
-          className={`navMenu ${activeTab === 0 && "tabActive"}`}
+          className={`navMenu justify-content-center ${activeTab === 0 && "tabActive"}`}
           onClick={() => setActiveTab(0)}
         >
           General Details
         </div>
         <div
-          className={`navMenu ${activeTab === 1 && "tabActive"}`}
+          className={`navMenu justify-content-center ${activeTab === 1 && "tabActive"}`}
           onClick={() => setActiveTab(1)}
         >
           Documents
         </div>
         <div
-          className={`navMenu ${activeTab === 2 && "tabActive"}`}
+          className={`navMenu justify-content-center ${activeTab === 2 && "tabActive"}`}
           onClick={() => setActiveTab(2)}
         >
           Bank Details
         </div>
         <div
-          className={`navMenu ${activeTab === 3 && "tabActive"}`}
+          className={`navMenu justify-content-center ${activeTab === 3 && "tabActive"}`}
           onClick={() => setActiveTab(3)}
         >
           Loans
         </div>
         <div
-          className={`navMenu ${activeTab === 4 && "tabActive"}`}
+          className={`navMenu justify-content-center ${activeTab === 4 && "tabActive"}`}
           onClick={() => setActiveTab(4)}
         >
           Savings
         </div>
         <div
-          className={`navMenu ${activeTab === 5 && "tabActive"}`}
+          className={`navMenu justify-content-center ${activeTab === 5 && "tabActive"}`}
           onClick={() => setActiveTab(5)}
         >
           App and System

@@ -37,7 +37,9 @@ const User = (): JSX.Element => {
       <Header />
 
       <div className="d-flex">
-        <Sidebar />
+        <div className="d-med-none">
+          <Sidebar />
+        </div>
 
         <div className="content">
           <div className="d-flex align-items-center mb-4">
@@ -48,10 +50,10 @@ const User = (): JSX.Element => {
             </Link>
           </div>
 
-          <div className="d-flex align-items-center justify-content-between">
+          <div className="d-flex align-items-center justify-content-between d-lge-block">
             <div className="headerText">User Details</div>
 
-            <div className="d-flex">
+            <div className="d-flex d-xsl-block">
               <div className="outline-btn red-outline me-3">Blacklist User</div>
 
               <div className="outline-btn green-outline">Activate User</div>

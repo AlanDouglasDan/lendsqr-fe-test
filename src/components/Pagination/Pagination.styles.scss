@@ -1,6 +1,8 @@
+@use "variables";
+
 .rowsPerPageBtn {
   font-size: 14px;
-  color: #545f7d;
+  color: variables.$dim-grey;
   font-weight: 500;
   background-color: rgba(33, 63, 125, 0.1);
   padding: 0 12px;
@@ -22,7 +24,7 @@
 }
 
 .paginationNavigator {
-  color: #545f7d;
+  color: variables.$dim-grey;
   margin: 0 10px;
   opacity: 0.6;
   cursor: pointer;

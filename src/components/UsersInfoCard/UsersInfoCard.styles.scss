@@ -1,45 +1,46 @@
+@use "variables";
+
 .grid-card {
-    // height: 160px;
-    background-color: #fff;
-    padding: 20px 30px;
-    border: 1px solid rgba(33, 63, 125, 0.06);
-    box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
-    border-radius: 4px;
-  }
-  
-  .card-icon {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-  }
-  
-  .card-text {
-    font-size: 16px;
-    color: #545f7d;
-    margin: 12px 0;
-    font-weight: 500;
-    text-transform: uppercase;
-  }
-  
-  .card-text-bold {
-    font-size: 24px;
-    color: #213f7d;
-    font-weight: 600;
-  }
-  
-  .light-pink {
-    background-color: rgba(223, 24, 255, 0.1);
-  }
-  
-  .light-blue {
-    background-color: rgba(87, 24, 255, 0.1);
-  }
-  
-  .light-orange {
-    background-color: rgba(245, 95, 68, 0.1);
-  }
-  
-  .light-red {
-    background-color: rgba(255, 51, 102, 0.1);
-  }
-  
+  // height: 160px;
+  background-color: variables.$white;
+  padding: 20px 30px;
+  border: 1px solid rgba(33, 63, 125, 0.06);
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 4px;
+}
+
+.card-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.card-text {
+  font-size: 16px;
+  color: variables.$dim-grey;
+  margin-top: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.card-text-bold {
+  font-size: 24px;
+  color: variables.$dark-blue;
+  font-weight: 600;
+}
+
+.light-pink {
+  background-color: rgba(223, 24, 255, 0.1);
+}
+
+.light-blue {
+  background-color: rgba(87, 24, 255, 0.1);
+}
+
+.light-orange {
+  background-color: rgba(245, 95, 68, 0.1);
+}
+
+.light-red {
+  background-color: rgba(255, 51, 102, 0.1);
+}
