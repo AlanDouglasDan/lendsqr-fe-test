@@ -42,7 +42,8 @@
   align-items: end;
   display: flex;
   text-align: center;
-  width: 200%;
+  width: 100%;
+  white-space: nowrap;
 }
 
 .tabActive {
@@ -53,4 +54,5 @@
 
 .tabNav {
   margin-top: 50px;
+  overflow-x: scroll;
 }

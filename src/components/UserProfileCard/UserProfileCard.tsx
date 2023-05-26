@@ -56,7 +56,7 @@ const UserProfileCard: React.FC<Props> = ({
         </div>
       </div>
 
-      <div className="tabNav d-flex justify-content-between d-lge-block">
+      <div className="tabNav d-flex justify-content-between">
         <div
           className={`navMenu justify-content-center ${activeTab === 0 && "tabActive"}`}
           onClick={() => setActiveTab(0)}

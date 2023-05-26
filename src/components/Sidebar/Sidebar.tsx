@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 import {
@@ -26,9 +27,32 @@ import {
 } from "../../components/icons";
 import "./Sidebar.styles.scss";
 
-const Sidebar = () => {
+type Props = {
+  mobileMenuOpen: Boolean;
+};
+
+const Sidebar: React.FC<Props> = ({ mobileMenuOpen }) => {
+  const [width, setWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
-    <div className="sidebar">
+    <div
+      className={`${
+        mobileMenuOpen === true && width < 769 ? "sidebar-mobile" : "sidebar"
+      }`}
+      // className={`sidebar`}
+    >
       <div className="align-items-center sidebar-menu">
         <BriefcaseIcon />
 

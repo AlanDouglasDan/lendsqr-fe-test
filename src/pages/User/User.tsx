@@ -15,6 +15,9 @@ const User = (): JSX.Element => {
   const [activeTab, setActiveTab] = useState<number>(0); // [0, 1, 2, 3, 4, 5]
   const [data, setData] = useState<UserInterface | null>(null);
 
+  const [mobileMenuOpen, setMobileMenuOpen] = useState<Boolean>(false);
+  const toggleMobileMenu = () => setMobileMenuOpen(!mobileMenuOpen);
+
   const { id } = useParams<string>();
 
   useEffect(() => {
@@ -34,12 +37,13 @@ const User = (): JSX.Element => {
 
   return (
     <div className="usersBody vh-100">
-      <Header />
+      <Header
+        mobileMenuOpen={mobileMenuOpen}
+        toggleMobileMenu={toggleMobileMenu}
+      />
 
       <div className="d-flex">
-        <div className="d-med-none">
-          <Sidebar />
-        </div>
+        <Sidebar mobileMenuOpen={mobileMenuOpen} />
 
         <div className="content">
           <div className="d-flex align-items-center mb-4">
@@ -50,7 +54,7 @@ const User = (): JSX.Element => {
             </Link>
           </div>
 
-          <div className="d-flex align-items-center justify-content-between d-lge-block">
+          <div className="d-flex align-items-center justify-content-between d-mde-block">
             <div className="headerText">User Details</div>
 
             <div className="d-flex d-xsl-block">
