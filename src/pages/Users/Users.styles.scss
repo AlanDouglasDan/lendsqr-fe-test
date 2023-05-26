@@ -95,6 +95,16 @@
     display: block;
     cursor: pointer;
   }
+
+  .sidebar {
+    // width: 0;
+    left: -283px;
+    position: fixed;
+  }
+
+  .header {
+    height: 70px;
+  }
 }
 
 // for screens smaller than 500px

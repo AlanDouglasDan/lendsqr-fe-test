@@ -54,19 +54,18 @@
   }
 
   .profile-card .d-lge-block,
-  .usersBody .d-lge-block,
   .centralize-lge {
     display: grid !important;
     justify-content: center !important;
     place-items: center;
   }
 
-  .usersBody .d-lge-block {
-    grid-gap: 15px;
-  }
-
   .verticalLine {
     display: none;
+  }
+
+  .profileImageContainer {
+    margin-right: 0 !important;
   }
 
   .tierText {
@@ -87,12 +86,20 @@
   .information-card .grid-4 {
     grid-template-columns: 1fr !important;
   }
+  .usersBody .d-mde-block {
+    display: block !important;
+    grid-gap: 15px;
+  }
+
+  .headerText {
+    margin-bottom: 15px;
+  }
 }
 
 // for screens smaller than 500px
 @media (max-width: 500px) {
   .d-xsl-block {
-    display: grid !important;
+    display: block !important;
     justify-content: center !important;
     place-items: center;
     grid-gap: 10px;
@@ -101,6 +108,8 @@
   .outline-btn {
     margin: 0 !important;
     width: 100% !important;
+    margin-top: 15px !important;
+    text-align: center;
   }
 
   .navMenu {

@@ -19,6 +19,9 @@ const Users = () => {
     JSON.parse(localStorage.getItem("users") || "[]")
   );
 
+  const [mobileMenuOpen, setMobileMenuOpen] = useState<Boolean>(false);
+  const toggleMobileMenu = () => setMobileMenuOpen(!mobileMenuOpen);
+
   const fetchUsers = async () => {
     axios
       .get("https://6270020422c706a0ae70b72c.mockapi.io/lendsqr/api/v1/users")
@@ -38,12 +41,13 @@ const Users = () => {
 
   return (
     <div className="usersBody vh-100">
-      <Header />
+      <Header
+        mobileMenuOpen={mobileMenuOpen}
+        toggleMobileMenu={toggleMobileMenu}
+      />
 
       <div className="d-flex">
-        <div className="d-med-none">
-          <Sidebar />
-        </div>
+        <Sidebar mobileMenuOpen={mobileMenuOpen} />
 
         <div className="content">
           <div className="headerText">Users</div>
