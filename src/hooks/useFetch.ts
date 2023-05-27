@@ -1,16 +1,25 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-const useFetch = async (url: string) => {
-  const [data, setdata] = useState<any>(null);
+const useFetch = (url: string) => {
+  const [data, setData] = useState<any>(null);
+
+  const fetchUsers = async () => {
+    axios
+      .get(url)
+      .then((_data) => {
+        setData(_data.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
 
   useEffect(() => {
-    axios.get(url).then((data) => {
-      console.log(data);
-      setdata(data);
-    });
-  }, [url]);
+    fetchUsers();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
-  return { data };
+  return { data, setData, fetchUsers };
 };
 export default useFetch;

@@ -60,12 +60,7 @@
   height: 24px;
   transition: all 0.25s;
   position: relative;
-  display: block;
-  outline: none;
   background-color: transparent;
-  border: none;
-  margin-top: 5px;
-  display: none;
 }
 
 .hamburger-top,
@@ -74,8 +69,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 22px;
-  height: 1.7px;
+  width: 24px;
+  height: 4px;
   background: variables.$dark-blue;
   transform: rotate(0);
   transition: all 0.3s;
@@ -106,6 +101,6 @@
   transform: rotate(-45deg) translateY(6px) translate(-6px);
 }
 
-.d-none {
+.d-noone {
   display: none !important;
 }

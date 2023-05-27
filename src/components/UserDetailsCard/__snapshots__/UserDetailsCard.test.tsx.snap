@@ -1,0 +1,349 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`User Details Card Component Test User Details Card Component Snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="information-card"
+  >
+    <div
+      class="header16 dark-blue"
+    >
+      Personal Information
+    </div>
+    <div
+      class="grid-5 mt-30px"
+    >
+      <div>
+        <div
+          class="text-uppercase dim-grey"
+        >
+          full Name
+        </div>
+        <div
+          class="header16 dim-grey mt-1"
+        >
+           
+        </div>
+      </div>
+      <div>
+        <div
+          class="text-uppercase dim-grey"
+        >
+          Phone Number
+        </div>
+        <div
+          class="header16 dim-grey mt-1"
+        />
+      </div>
+      <div>
+        <div
+          class="text-uppercase dim-grey"
+        >
+          Email Address
+        </div>
+        <div
+          class="header16 dim-grey mt-1"
+        />
+      </div>
+      <div>
+        <div
+          class="text-uppercase dim-grey"
+        >
+          Bvn
+        </div>
+        <div
+          class="header16 dim-grey mt-1"
+        />
+      </div>
+      <div>
+        <div
+          class="text-uppercase dim-grey"
+        >
+          Gender
+        </div>
+        <div
+          class="header16 dim-grey mt-1"
+        />
+      </div>
+      <div>
+        <div
+          class="text-uppercase dim-grey"
+        >
+          Marital status
+        </div>
+        <div
+          class="header16 dim-grey mt-1"
+        >
+          Single
+        </div>
+      </div>
+      <div>
+        <div
+          class="text-uppercase dim-grey"
+        >
+          Children
+        </div>
+        <div
+          class="header16 dim-grey mt-1"
+        >
+          None
+        </div>
+      </div>
+      <div>
+        <div
+          class="text-uppercase dim-grey"
+        >
+          Type of residence
+        </div>
+        <div
+          class="header16 dim-grey mt-1"
+        >
+          Parent’s Apartment
+        </div>
+      </div>
+    </div>
+    <hr
+      class="horizontal-line"
+    />
+    <div
+      class="header16 dark-blue"
+    >
+      Education and Employment
+    </div>
+    <div
+      class="grid-4 m-0 mt-30px"
+    >
+      <div>
+        <div
+          class="text-uppercase dim-grey"
+        >
+          level of education
+        </div>
+        <div
+          class="header16 dim-grey mt-1"
+        />
+      </div>
+      <div>
+        <div
+          class="text-uppercase dim-grey"
+        >
+          employment status
+        </div>
+        <div
+          class="header16 dim-grey mt-1"
+        />
+      </div>
+      <div>
+        <div
+          class="text-uppercase dim-grey"
+        >
+          sector of employment
+        </div>
+        <div
+          class="header16 dim-grey mt-1"
+        />
+      </div>
+      <div>
+        <div
+          class="text-uppercase dim-grey"
+        >
+          Duration of employment
+        </div>
+        <div
+          class="header16 dim-grey mt-1"
+        />
+      </div>
+      <div>
+        <div
+          class="text-uppercase dim-grey"
+        >
+          office email
+        </div>
+        <div
+          class="header16 dim-grey mt-1"
+        />
+      </div>
+      <div>
+        <div
+          class="text-uppercase dim-grey"
+        >
+          Monthly income
+        </div>
+        <div
+          class="header16 dim-grey mt-1"
+        >
+          ₦ - ₦
+        </div>
+      </div>
+      <div>
+        <div
+          class="text-uppercase dim-grey"
+        >
+          loan repayment
+        </div>
+        <div
+          class="header16 dim-grey mt-1"
+        />
+      </div>
+    </div>
+    <hr
+      class="horizontal-line"
+    />
+    <div
+      class="header16 dark-blue"
+    >
+      Socials
+    </div>
+    <div
+      class="grid-5 mt-30px"
+    >
+      <div>
+        <div
+          class="text-uppercase dim-grey"
+        >
+          Twitter
+        </div>
+        <div
+          class="header16 dim-grey mt-1"
+        />
+      </div>
+      <div>
+        <div
+          class="text-uppercase dim-grey"
+        >
+          Facebook
+        </div>
+        <div
+          class="header16 dim-grey mt-1"
+        />
+      </div>
+      <div>
+        <div
+          class="text-uppercase dim-grey"
+        >
+          Instagram
+        </div>
+        <div
+          class="header16 dim-grey mt-1"
+        />
+      </div>
+    </div>
+    <hr
+      class="horizontal-line"
+    />
+    <div
+      class="header16 dark-blue"
+    >
+      Guarantor
+    </div>
+    <div
+      class="grid-5 mt-30px"
+    >
+      <div>
+        <div
+          class="text-uppercase dim-grey"
+        >
+          full Name
+        </div>
+        <div
+          class="header16 dim-grey mt-1"
+        >
+           
+        </div>
+      </div>
+      <div>
+        <div
+          class="text-uppercase dim-grey"
+        >
+          Phone Number
+        </div>
+        <div
+          class="header16 dim-grey mt-1"
+        />
+      </div>
+      <div>
+        <div
+          class="text-uppercase dim-grey"
+        >
+          Email Address
+        </div>
+        <div
+          class="header16 dim-grey mt-1"
+        >
+          grace@gmail.com
+        </div>
+      </div>
+      <div>
+        <div
+          class="text-uppercase dim-grey"
+        >
+          Relationship
+        </div>
+        <div
+          class="header16 dim-grey mt-1"
+        >
+          Sister
+        </div>
+      </div>
+    </div>
+    <hr
+      class="horizontal-line"
+    />
+    <div
+      class="header16 dark-blue opacity-0"
+    >
+      Guarantor
+    </div>
+    <div
+      class="grid-5 mt-30px"
+    >
+      <div>
+        <div
+          class="text-uppercase dim-grey"
+        >
+          full Name
+        </div>
+        <div
+          class="header16 dim-grey mt-1"
+        >
+           
+        </div>
+      </div>
+      <div>
+        <div
+          class="text-uppercase dim-grey"
+        >
+          Phone Number
+        </div>
+        <div
+          class="header16 dim-grey mt-1"
+        />
+      </div>
+      <div>
+        <div
+          class="text-uppercase dim-grey"
+        >
+          Email Address
+        </div>
+        <div
+          class="header16 dim-grey mt-1"
+        >
+          grace@gmail.com
+        </div>
+      </div>
+      <div>
+        <div
+          class="text-uppercase dim-grey"
+        >
+          Relationship
+        </div>
+        <div
+          class="header16 dim-grey mt-1"
+        >
+          Sister
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

@@ -62,6 +62,10 @@
     display: none !important;
   }
 
+  .loginBody .d-none {
+    display: none;
+  }
+
   .d-med-flex {
     display: flex !important;
     left: auto;

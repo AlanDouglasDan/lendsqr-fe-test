@@ -36,7 +36,7 @@ const ActionMenu: React.FC<Props> = ({
         data-bs-toggle="dropdown"
       />
       <ul className="dropdown-menu">
-        <Link to={`/users/${userId}`} className="no-underline text-dark">
+        <Link to={`/dashboard/users/${userId}`} className="no-underline text-dark">
           <li className="dropdown-item align-items-center d-flex py-2">
             <EyeIcon />
             <span className="ms-2"> View Details</span>

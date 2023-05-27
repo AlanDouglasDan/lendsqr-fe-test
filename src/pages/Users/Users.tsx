@@ -11,23 +11,22 @@ import UsersTable from "components/UsersTable/UsersTable";
 import Header from "components/Header/Header";
 import Sidebar from "components/Sidebar/Sidebar";
 import UsersInfoCard from "components/UsersInfoCard/UsersInfoCard";
+import Loader from "components/Loader/Loader";
 import { UserInterface } from "types/user.types";
+import { API_URLS } from "../../constants";
 import "./Users.styles.scss";
 
 const Users = () => {
-  const [data, setData] = useState<UserInterface[]>(
-    JSON.parse(localStorage.getItem("users") || "[]")
-  );
+  const [data, setData] = useState<UserInterface[]>([]);
 
   const [mobileMenuOpen, setMobileMenuOpen] = useState<Boolean>(false);
   const toggleMobileMenu = () => setMobileMenuOpen(!mobileMenuOpen);
 
   const fetchUsers = async () => {
     axios
-      .get("https://6270020422c706a0ae70b72c.mockapi.io/lendsqr/api/v1/users")
+      .get(API_URLS.GET_USERS)
       .then((_data) => {
         setData(_data.data);
-        localStorage.setItem("users", JSON.stringify(_data.data));
       })
       .catch((err) => {
         console.log(err);
@@ -35,7 +34,7 @@ const Users = () => {
   };
 
   useEffect(() => {
-    if (data.length === 0) fetchUsers();
+    fetchUsers();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -49,50 +48,56 @@ const Users = () => {
       <div className="d-flex">
         <Sidebar mobileMenuOpen={mobileMenuOpen} />
 
-        <div className="content">
-          <div className="headerText">Users</div>
+        {data.length > 0 ? (
+          <div className="content">
+            <div className="headerText">Users</div>
 
-          <div className="grid-4">
-            <UsersInfoCard
-              icon={<PeopleIcon />}
-              color="light-pink"
-              title="USERS"
-              number={String(data.length)}
-            />
+            <div className="grid-4">
+              <UsersInfoCard
+                icon={<PeopleIcon />}
+                color="light-pink"
+                title="USERS"
+                number={String(data.length)}
+              />
 
-            <UsersInfoCard
-              icon={<BlueUsersIcon />}
-              color="light-blue"
-              title="ACTIVE USERS"
-              number={String(data.filter((user) => user.lastActiveDate).length)}
-            />
+              <UsersInfoCard
+                icon={<BlueUsersIcon />}
+                color="light-blue"
+                title="ACTIVE USERS"
+                number={String(
+                  data.filter((user) => user.lastActiveDate).length
+                )}
+              />
 
-            <UsersInfoCard
-              icon={<OrangeLoanIcon />}
-              color="light-orange"
-              title="USERS WITH LOANS"
-              number={String(
-                data.filter((user) => user.education.loanRepayment).length
-              )}
-            />
+              <UsersInfoCard
+                icon={<OrangeLoanIcon />}
+                color="light-orange"
+                title="USERS WITH LOANS"
+                number={String(
+                  data.filter((user) => user.education.loanRepayment).length
+                )}
+              />
 
-            <UsersInfoCard
-              icon={<RedCoinIcon />}
-              color="light-red"
-              title="USERS WITH SAVINGS"
-              number={String(
-                data.filter(
-                  (user) =>
-                    Number(user.education.monthlyIncome[0]) -
-                      Number(user.education.monthlyIncome[1]) >
-                    0
-                ).length
-              )}
-            />
+              <UsersInfoCard
+                icon={<RedCoinIcon />}
+                color="light-red"
+                title="USERS WITH SAVINGS"
+                number={String(
+                  data.filter(
+                    (user) =>
+                      Number(user.education.monthlyIncome[0]) -
+                        Number(user.education.monthlyIncome[1]) >
+                      0
+                  ).length
+                )}
+              />
+            </div>
+
+            <UsersTable data={data} setData={setData} fetchUsers={fetchUsers} />
           </div>
-
-          <UsersTable data={data} setData={setData} fetchUsers={fetchUsers} />
-        </div>
+        ) : (
+          <Loader />
+        )}
       </div>
     </div>
   );

@@ -1,3 +1,4 @@
+import { getPaginatedPages } from "../../utils";
 import "./Pagination.styles.scss";
 
 type Props = {
@@ -17,6 +18,10 @@ const Pagination: React.FC<Props> = ({
   setPage,
   numberOfPages,
 }) => {
+  const _pagesArray = getPaginatedPages(page, numberOfPages);
+
+  // console.log(_pagesArray);
+
   return (
     <div className="d-flex align-items-center justify-content-between mt-20px center-grid">
       <div className="d-flex align-items-center">
@@ -55,17 +60,21 @@ const Pagination: React.FC<Props> = ({
           <i className="fa fa-angle-left" />
         </button>
 
-        {[...Array(numberOfPages)].map((_, index) => (
-          <div
-            className={`paginationNavigator ${
-              page === index + 1 && "activePaginationNavigator"
-            }`}
-            onClick={() => setPage(index + 1)}
-            key={index}
-          >
-            {index + 1}
-          </div>
-        ))}
+        {_pagesArray.map((_page, index) => {
+          if (_page === -1) return <div key={index}>...</div>;
+          else
+            return (
+              <div
+                className={`paginationNavigator ${
+                  page === _page && "activePaginationNavigator"
+                }`}
+                onClick={() => setPage(_page)}
+                key={index}
+              >
+                {_page}
+              </div>
+            );
+        })}
 
         <button
           className="operandButton ms-3"

@@ -1,0 +1,92 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pagination Component Test Pagination Component Snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="d-flex align-items-center justify-content-between mt-20px center-grid"
+  >
+    <div
+      class="d-flex align-items-center"
+    >
+      <div>
+        Showing
+      </div>
+      <div
+        class="dropdown"
+      >
+        <button
+          aria-expanded="false"
+          class="dropdown-toggle mx-2 rowsPerPageBtn"
+          data-bs-toggle="dropdown"
+          type="button"
+        >
+          10
+          <i
+            class="fa fa-angle-down ms-2"
+          />
+        </button>
+        <ul
+          class="dropdown-menu"
+        >
+          <li
+            class="dropdown-item"
+          >
+            5
+          </li>
+          <li
+            class="dropdown-item"
+          >
+            10
+          </li>
+          <li
+            class="dropdown-item"
+          >
+            20
+          </li>
+        </ul>
+      </div>
+      <div>
+        out of 100
+      </div>
+    </div>
+    <div
+      class="d-flex align-items-center"
+    >
+      <button
+        class="operandButton me-3"
+        disabled=""
+      >
+        <i
+          class="fa fa-angle-left"
+        />
+      </button>
+      <div
+        class="paginationNavigator activePaginationNavigator"
+      >
+        1
+      </div>
+      <div>
+        ...
+      </div>
+      <div
+        class="paginationNavigator false"
+      >
+        0
+      </div>
+      <div
+        class="paginationNavigator activePaginationNavigator"
+      >
+        1
+      </div>
+      <button
+        class="operandButton ms-3"
+        disabled=""
+      >
+        <i
+          class="fa fa-angle-right"
+        />
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;

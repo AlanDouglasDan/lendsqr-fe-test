@@ -9,29 +9,38 @@ import "./User.styles.scss";
 import UserProfileCard from "components/UserProfileCard/UserProfileCard";
 import UserDetailsCard from "components/UserDetailsCard/UserDetailsCard";
 import Loader from "components/Loader/Loader";
+import { API_URLS } from "../../constants";
 import { UserInterface } from "types/user.types";
 
 const User = (): JSX.Element => {
-  const [activeTab, setActiveTab] = useState<number>(0); // [0, 1, 2, 3, 4, 5]
-  const [data, setData] = useState<UserInterface | null>(null);
-
-  const [mobileMenuOpen, setMobileMenuOpen] = useState<Boolean>(false);
-  const toggleMobileMenu = () => setMobileMenuOpen(!mobileMenuOpen);
-
   const { id } = useParams<string>();
 
-  useEffect(() => {
+  const [activeTab, setActiveTab] = useState<number>(0); // [0, 1, 2, 3, 4, 5]
+
+  const [data, setData] = useState<UserInterface>(
+    JSON.parse(localStorage.getItem(`user-${id}`) || "{}")
+  );
+
+  const [mobileMenuOpen, setMobileMenuOpen] = useState<Boolean>(false);
+
+  const toggleMobileMenu = () => setMobileMenuOpen(!mobileMenuOpen);
+
+  const fetchUserDetails = async () => {
     axios
-      .get(
-        `https://6270020422c706a0ae70b72c.mockapi.io/lendsqr/api/v1/users/${id}`
-      )
+      .get(`${API_URLS.GET_USERS}/${id}`)
       .then((_data) => {
+        localStorage.setItem(`user-${id}`, JSON.stringify(_data.data));
         setData(_data.data);
       })
       .catch((err) => {
         console.log(err);
       });
-  }, [id]);
+  };
+
+  useEffect(() => {
+    if (Object.keys(data).length === 0) fetchUserDetails();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   // console.log(data);
 
@@ -64,7 +73,7 @@ const User = (): JSX.Element => {
             </div>
           </div>
 
-          {data ? (
+          {Object.keys(data).length !== 0 ? (
             <>
               <UserProfileCard
                 data={data}

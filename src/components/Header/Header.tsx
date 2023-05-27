@@ -12,7 +12,7 @@ const Header: React.FC<Props> = ({ toggleMobileMenu, mobileMenuOpen }) => {
   return (
     <div className="header row m-0">
       <div className="col-md-6 d-flex align-items-center justify-content-between px-0 d-med-none">
-        <Link to="/" className="no-underline text-dark">
+        <Link to="/dashboard/users" className="no-underline text-dark">
           <div className="d-flex align-items-start">
             <img src={images.union} alt="Union" className="unionImage" />
             <img src={images.lendsqr} alt="Lendsqr" className="lendsqrImage" />
@@ -48,25 +48,37 @@ const Header: React.FC<Props> = ({ toggleMobileMenu, mobileMenuOpen }) => {
         <i className="fa fa-caret-down angleIcon cursor-pointer" />
       </div>
 
-      <div className="d-none d-med-flex align-items-center justify-content-between p-0">
-        <Link to="/" className="no-underline text-dark">
-          <div className="d-flex align-items-start">
-            <img src={images.union} alt="Union" className="unionImage" />
-            <img src={images.lendsqr} alt="Lendsqr" className="lendsqrImage" />
-          </div>
-        </Link>
-
-        <div
-          onClick={toggleMobileMenu}
-          className={`hamburger d-flex align-items-center justify-content-center ${
-            mobileMenuOpen === true && "open"
-          }
+      <div className="d-noone d-med-flex align-items-center justify-content-between p-0">
+        <div className="d-flex align-items-center">
+          <div
+            onClick={toggleMobileMenu}
+            className={`hamburger d-flex align-items-center justify-content-center me-4 mt-1 ${
+              mobileMenuOpen === true && "open"
+            }
           `}
-        >
-          <span className="hamburger-top"></span>
-          <span className="hamburger-middle"></span>
-          <span className="hamburger-bottom"></span>
+          >
+            <span className="hamburger-top"></span>
+            <span className="hamburger-middle"></span>
+            <span className="hamburger-bottom"></span>
+          </div>
+
+          <Link to="/dashboard/users" className="no-underline text-dark">
+            <div className="d-flex align-items-center">
+              <img src={images.union} alt="Union" className="unionImage" />
+              <img
+                src={images.lendsqr}
+                alt="Lendsqr"
+                className="lendsqrImage"
+              />
+            </div>
+          </Link>
         </div>
+
+        <img
+          src={images.profile}
+          alt="Profile"
+          className="profileImage cursor-pointer"
+        />
       </div>
     </div>
   );

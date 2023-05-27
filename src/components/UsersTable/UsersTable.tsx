@@ -5,6 +5,8 @@ import "./UsersTable.styles.scss";
 import FilterForm from "components/FilterForm/FilterForm";
 import ActionMenu from "components/ActionMenu/ActionMenu";
 import Pagination from "components/Pagination/Pagination";
+import { FilterIcon } from "components/icons";
+import { OPTIONS, TABLE_HEADERS } from '../../constants';
 import { UserInterface, FilterInterface } from "types/user.types";
 
 const pending = <span className="light-yellow-btn">Pending</span>;
@@ -20,15 +22,6 @@ const initialState: FilterInterface = {
   date: "",
   status: "",
 };
-
-const tableHeaders = [
-  "Organization",
-  "Username",
-  "Email",
-  "Phone Number",
-  "Date Joined",
-  "Status",
-];
 
 type Props = {
   data: UserInterface[];
@@ -61,7 +54,7 @@ const UsersTable: React.FC<Props> = ({ data, setData, fetchUsers }) => {
     return item.orgName;
   });
 
-  console.log(filters);
+  // console.log(filters);
   // console.log(data);
 
   const numberOfPages = Math.ceil(data.length / rowsPerPage);
@@ -130,17 +123,25 @@ const UsersTable: React.FC<Props> = ({ data, setData, fetchUsers }) => {
         <table className="table">
           <thead>
             <tr>
-              {tableHeaders.map((header: any, index: any) => (
+              {TABLE_HEADERS.map((header: any, index: any) => (
                 <td className="tableHeader" key={index}>
                   <div className="d-flex">
                     <span>{header}</span>
-                    <FilterForm
-                      filters={filters}
-                      setFilters={setFilters}
-                      _organizations={_organizations}
-                      resetFilterFunction={resetFilterFunction}
-                      runFilterFunction={runFilterFunction}
-                    />
+                    <span className="dropdown">
+                      <div
+                        data-bs-toggle="dropdown"
+                        className="dropdown-toggle"
+                      >
+                        <FilterIcon />
+                      </div>
+                      <FilterForm
+                        filters={filters}
+                        setFilters={setFilters}
+                        _organizations={_organizations}
+                        resetFilterFunction={resetFilterFunction}
+                        runFilterFunction={runFilterFunction}
+                      />
+                    </span>
                   </div>
                 </td>
               ))}
@@ -155,18 +156,8 @@ const UsersTable: React.FC<Props> = ({ data, setData, fetchUsers }) => {
               .map((user: any, index: any) => {
                 const date: Date = new Date(user.createdAt);
 
-                // Define options for formatting the date
-                const options: Intl.DateTimeFormatOptions = {
-                  year: "numeric",
-                  month: "short",
-                  day: "numeric",
-                  hour: "numeric",
-                  minute: "numeric",
-                  hour12: true,
-                };
-
                 // Convert the date to the desired format
-                const formattedDate = date.toLocaleString("en-US", options);
+                const formattedDate = date.toLocaleString("en-US", OPTIONS);
 
                 return (
                   <tr key={user.id} className="align-middle">

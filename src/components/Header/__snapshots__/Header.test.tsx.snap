@@ -1,0 +1,241 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header Component Test Header Component Desktop View Snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="header row m-0"
+  >
+    <div
+      class="col-md-6 d-flex align-items-center justify-content-between px-0 d-med-none"
+    >
+      <a
+        class="no-underline text-dark"
+        href="/dashboard/users"
+      >
+        <div
+          class="d-flex align-items-start"
+        >
+          <img
+            alt="Union"
+            class="unionImage"
+            src="Union.png"
+          />
+          <img
+            alt="Lendsqr"
+            class="lendsqrImage"
+            src="lendsqr.png"
+          />
+        </div>
+      </a>
+      <div
+        class="input-group my-4 border-0"
+      >
+        <input
+          aria-label="search"
+          class="form-control border-right-0"
+          placeholder="Search for anything"
+          type="text"
+        />
+        <span
+          class="input-group-text bg-theme text-white border-0"
+        >
+          <i
+            class="fa fa-search"
+          />
+        </span>
+      </div>
+    </div>
+    <div
+      class="col-md-6 d-flex align-items-center justify-content-end px-0 d-med-none"
+    >
+      <span
+        class="docsText cursor-pointer"
+      >
+        Docs
+      </span>
+      <i
+        class="fa fa-bell-o bellIcon cursor-pointer"
+      />
+      <img
+        alt="Profile"
+        class="profileImage cursor-pointer"
+        src="profile.png"
+      />
+      <span
+        class="profileText"
+      >
+        Adedeji
+      </span>
+      <i
+        class="fa fa-caret-down angleIcon cursor-pointer"
+      />
+    </div>
+    <div
+      class="d-noone d-med-flex align-items-center justify-content-between p-0"
+    >
+      <div
+        class="d-flex align-items-center"
+      >
+        <div
+          class="hamburger d-flex align-items-center justify-content-center me-4 mt-1 false
+          "
+        >
+          <span
+            class="hamburger-top"
+          />
+          <span
+            class="hamburger-middle"
+          />
+          <span
+            class="hamburger-bottom"
+          />
+        </div>
+        <a
+          class="no-underline text-dark"
+          href="/dashboard/users"
+        >
+          <div
+            class="d-flex align-items-center"
+          >
+            <img
+              alt="Union"
+              class="unionImage"
+              src="Union.png"
+            />
+            <img
+              alt="Lendsqr"
+              class="lendsqrImage"
+              src="lendsqr.png"
+            />
+          </div>
+        </a>
+      </div>
+      <img
+        alt="Profile"
+        class="profileImage cursor-pointer"
+        src="profile.png"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Header Component Test Header Component Mobile View Snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="header row m-0"
+  >
+    <div
+      class="col-md-6 d-flex align-items-center justify-content-between px-0 d-med-none"
+    >
+      <a
+        class="no-underline text-dark"
+        href="/dashboard/users"
+      >
+        <div
+          class="d-flex align-items-start"
+        >
+          <img
+            alt="Union"
+            class="unionImage"
+            src="Union.png"
+          />
+          <img
+            alt="Lendsqr"
+            class="lendsqrImage"
+            src="lendsqr.png"
+          />
+        </div>
+      </a>
+      <div
+        class="input-group my-4 border-0"
+      >
+        <input
+          aria-label="search"
+          class="form-control border-right-0"
+          placeholder="Search for anything"
+          type="text"
+        />
+        <span
+          class="input-group-text bg-theme text-white border-0"
+        >
+          <i
+            class="fa fa-search"
+          />
+        </span>
+      </div>
+    </div>
+    <div
+      class="col-md-6 d-flex align-items-center justify-content-end px-0 d-med-none"
+    >
+      <span
+        class="docsText cursor-pointer"
+      >
+        Docs
+      </span>
+      <i
+        class="fa fa-bell-o bellIcon cursor-pointer"
+      />
+      <img
+        alt="Profile"
+        class="profileImage cursor-pointer"
+        src="profile.png"
+      />
+      <span
+        class="profileText"
+      >
+        Adedeji
+      </span>
+      <i
+        class="fa fa-caret-down angleIcon cursor-pointer"
+      />
+    </div>
+    <div
+      class="d-noone d-med-flex align-items-center justify-content-between p-0"
+    >
+      <div
+        class="d-flex align-items-center"
+      >
+        <div
+          class="hamburger d-flex align-items-center justify-content-center me-4 mt-1 open
+          "
+        >
+          <span
+            class="hamburger-top"
+          />
+          <span
+            class="hamburger-middle"
+          />
+          <span
+            class="hamburger-bottom"
+          />
+        </div>
+        <a
+          class="no-underline text-dark"
+          href="/dashboard/users"
+        >
+          <div
+            class="d-flex align-items-center"
+          >
+            <img
+              alt="Union"
+              class="unionImage"
+              src="Union.png"
+            />
+            <img
+              alt="Lendsqr"
+              class="lendsqrImage"
+              src="lendsqr.png"
+            />
+          </div>
+        </a>
+      </div>
+      <img
+        alt="Profile"
+        class="profileImage cursor-pointer"
+        src="profile.png"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;

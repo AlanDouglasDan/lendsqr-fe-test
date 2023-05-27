@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login Form Component Test Login Form Component Snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="w-100"
+  >
+    <div
+      class="welcomeText"
+    >
+      Welcome!
+    </div>
+    <div
+      class="welcomeText2"
+    >
+      Enter details to login.
+    </div>
+    <div
+      class="minWidth w-lg-100"
+    >
+      <div
+        class="form-group"
+      >
+        <input
+          class="form-control"
+          data-testid="email"
+          id="email"
+          placeholder="Enter email"
+          type="email"
+          value=""
+        />
+      </div>
+      <div
+        class="form-group"
+      >
+        <div
+          class="input-group my-4 form-control p-0"
+        >
+          <input
+            aria-label="password"
+            class="form-control border-0"
+            data-testid="password"
+            placeholder="Password"
+            type="password"
+            value=""
+          />
+          <span
+            class="input-group-text bg-white showText m-0 border-0"
+          >
+            SHOW
+          </span>
+        </div>
+      </div>
+      <div
+        class="forgotPassword"
+      >
+        FORGOT PASSWORD?
+      </div>
+      <button
+        class="w-100 submitButton text-white"
+        type="submit"
+      >
+        LOG IN
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;
