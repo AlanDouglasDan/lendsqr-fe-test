@@ -21,6 +21,17 @@
   height: 24px;
   cursor: pointer;
   border: none;
+  color: variables.$dark-blue;
+}
+
+.operandButton:hover {
+  background-color: variables.$dark-blue;
+  color: variables.$white;
+}
+
+.operandButton:disabled:hover {
+  background-color: rgba(33, 63, 125, 0.1);
+  color: variables.$dark-blue;
 }
 
 .paginationNavigator {
@@ -28,6 +39,10 @@
   margin: 0 10px;
   opacity: 0.6;
   cursor: pointer;
+}
+
+.paginationNavigator:hover {
+  opacity: 1;
 }
 
 .activePaginationNavigator {
