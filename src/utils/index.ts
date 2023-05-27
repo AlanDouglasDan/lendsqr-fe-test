@@ -22,7 +22,6 @@ const getPaginatedPages = (page: number, numberOfPages: number): number[] => {
     if (page === 1 || page === 2) {
       _pagesArray.push(2);
       _pagesArray.push(3);
-      _pagesArray.push(-1);
     } else {
       _pagesArray.push(-1);
       for (let i = page - 1; i <= page + 1; i++) {

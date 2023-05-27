@@ -27,10 +27,15 @@
 
 .showText {
   color: variables.$green !important;
-  font-size: 12px;
+  font-size: 12px !important;
   letter-spacing: 0.1em;
   cursor: pointer;
   font-weight: 600;
+}
+
+.showText:hover,
+.forgotPassword:hover {
+  color: #259493 !important;
 }
 
 .form-control,
@@ -52,9 +57,16 @@
   opacity: 0.6;
 }
 
-.form-control:focus,
-.input-group:focus-within {
-  border-color: variables.$green !important;
+.loginBody .form-control:focus,
+.loginBody .input-group:focus-within {
+  color: variables.$dim-grey;
+  background-color: variables.$white;
+  border-color: #9fe7e6;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(57, 205, 204, 0.25);
+}
+
+.loginBody .input-group .form-control:focus {
   box-shadow: none;
 }
 
@@ -66,10 +78,15 @@
   letter-spacing: 0.1em;
 }
 
+.submitButton:hover {
+  background-color: #2db3b2;
+}
+
 .forgotPassword {
   color: variables.$green;
   margin-bottom: 30px;
   letter-spacing: 0.1em;
   cursor: pointer;
   font-weight: 500;
+  font-size: 12px;
 }
