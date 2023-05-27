@@ -51,7 +51,6 @@ const Sidebar: React.FC<Props> = ({ mobileMenuOpen }) => {
       className={`${
         mobileMenuOpen === true && width < 769 ? "sidebar-mobile" : "sidebar"
       }`}
-      // className={`sidebar`}
     >
       <div className="align-items-center sidebar-menu">
         <BriefcaseIcon />
@@ -71,11 +70,13 @@ const Sidebar: React.FC<Props> = ({ mobileMenuOpen }) => {
 
       <div className="sidebar-section">
         <div className="sidebar-header">CUSTOMERS</div>
-        <div className="align-items-center sidebar-menu active">
-          <UsersIcon />
+        <Link to="/dashboard/users" className="no-underline">
+          <div className="align-items-center sidebar-menu active">
+            <UsersIcon />
 
-          <span className="sidebarText">Users</span>
-        </div>
+            <span className="sidebarText">Users</span>
+          </div>
+        </Link>
 
         <div className="align-items-center sidebar-menu mt-20px opacity-6">
           <TeamIcon />

@@ -35,6 +35,7 @@ const LoginForm = () => {
             placeholder="Enter email"
             onChange={(e) => setEmail(e.target.value)}
             value={email}
+            data-testid="email"
           />
         </div>
 
@@ -47,6 +48,7 @@ const LoginForm = () => {
               aria-label="password"
               onChange={(e) => setPassword(e.target.value)}
               value={password}
+              data-testid="password"
             />
             <span
               className="input-group-text bg-white showText m-0 border-0"
