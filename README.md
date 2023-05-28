@@ -26,7 +26,7 @@
 ![Admin Dashboard User Details Page (Mobile View)](/public/user-details-mobile-preview.png)
 ![Admin Dashboard User Details Page2 (Mobile View)](/public/user-details-mobile-preview2.png)
 
-### Demo Site: [Here](https://alan-douglas-lendsqr-fe-test.vercel.app/)
+### Demo Site: [Here](https://alan-douglas-dan-lendsqr-fe-test.vercel.app/)
 
 ## TOC
 
