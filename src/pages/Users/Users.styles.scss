@@ -4,51 +4,51 @@
 
 .usersBody {
   background-color: variables.$light-grey;
-}
 
-.usersBody .form-control,
-.usersBody .input-group-text,
-.usersBody .form-select {
-  height: 40px;
-  border-width: 1px;
-}
+  .form-control,
+  .input-group-text,
+  .form-select {
+    height: 40px;
+    border-width: 1px;
+  }
 
-.bg-theme {
-  background-color: variables.$green;
-  margin-left: 0px !important;
-}
+  .bg-theme {
+    background-color: variables.$green;
+    margin-left: 0px !important;
+  }
 
-.content {
-  padding: 60px;
-  width: calc(100% - 283px);
-  height: calc(100vh - 100px);
-  overflow-y: scroll;
-}
+  .content {
+    padding: 60px;
+    width: calc(100% - 283px);
+    height: calc(100vh - 100px);
+    overflow-y: scroll;
 
-.headerText {
-  font-size: 24px;
-  color: variables.$dim-grey;
-  font-weight: 500;
-}
+    .headerText {
+      font-size: 24px;
+      color: variables.$dim-grey;
+      font-weight: 500;
+    }
 
-.grid-4 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 26px;
-  margin: 40px 0;
+    .grid-4 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-gap: 26px;
+      margin: 40px 0;
+    }
+  }
 }
 
 // for screens smaller than 1300px
 @media (max-width: 1450px) {
   .usersBody .input-group {
-    width: 300px;
+    width: 300px !important;
   }
 }
 
 // for screens smaller than 1200px
 @media (max-width: 1200px) {
   .grid-4 {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr !important;
   }
 
   .center-grid {
@@ -59,18 +59,18 @@
   }
 
   .usersBody .lendsqrImage {
-    width: 90px;
+    width: 90px !important;
   }
 
   .usersBody .unionImage {
-    width: 15px;
+    width: 15px !important;
   }
 }
 
 // for screens smaller than 992px
 @media (max-width: 992px) {
   .usersBody .input-group {
-    width: 200px;
+    width: 200px !important;
   }
 
   .d-none .profileImage {
@@ -83,7 +83,7 @@
 // for screens smaller than 768px
 @media (max-width: 769px) {
   .content {
-    width: 100%;
+    width: 100% !important;
   }
 
   .d-med-none {
@@ -107,6 +107,6 @@
 // for screens smaller than 500px
 @media (max-width: 500px) {
   .grid-4 {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
   }
 }

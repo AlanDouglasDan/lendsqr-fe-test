@@ -56,7 +56,7 @@ const User = (): JSX.Element => {
 
         <div className="content">
           <div className="d-flex align-items-center mb-4">
-            <Link to={`/users`} className="no-underline text-dark">
+            <Link to={`/dashboard/users`} className="no-underline text-dark">
               <BackIcon />
 
               <span className="text16 ms-3">Back to Users</span>

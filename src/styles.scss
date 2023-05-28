@@ -4,3 +4,10 @@ body {
   margin: 0;
   font-family: "Work Sans", serif;
 }
+
+// for screens smaller than 7680px
+@media (max-width: 768px) {
+  body {
+    font-size: 80%;
+  }
+}

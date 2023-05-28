@@ -2,26 +2,26 @@
 
 .loginBody {
   font-family: "Avenir Next", sans-serif;
-}
 
-.logoImage {
-  top: 108px;
-  left: 97px;
-}
+  .logoImage {
+    top: 108px;
+    left: 97px;
+  }
 
-.welcomeimage {
-  width: 100%;
-  height: 100%;
-}
+  .welcomeimage {
+    width: 100%;
+    height: 100%;
+  }
 
-.leftLoginSide {
-  padding-left: 67px;
-  padding-right: 67px;
-}
+  .leftLoginSide {
+    padding-left: 67px;
+    padding-right: 67px;
+  }
 
-.loginFormContainer {
-  box-shadow: 0px 15px 90px rgba(0, 0, 0, 0.03);
-  padding-left: 100px;
+  .loginFormContainer {
+    box-shadow: 0px 15px 90px rgba(0, 0, 0, 0.03);
+    padding-left: 100px;
+  }
 }
 
 // responsive
@@ -29,22 +29,22 @@
 @media (max-width: 1300px) {
   .loginFormContainer,
   .leftLoginSide {
-    padding: 0px 3rem;
+    padding: 0px 3rem !important;
   }
 
   .w-lg-100 {
-    width: 100%;
+    width: 100% !important;
   }
 
   .justify-content-center-lg {
-    justify-content: center;
+    justify-content: center !important;
   }
 }
 
 // for screens smaller than 1000px
 @media (max-width: 900px) {
   .loginBody .grid-2 {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
   }
 
   .loginBody .d-med-none {
@@ -57,7 +57,7 @@
 
   .d-med-flex {
     display: flex !important;
-    left: 3rem;
-    top: 40px;
+    left: 3rem !important;
+    top: 40px !important;
   }
 }

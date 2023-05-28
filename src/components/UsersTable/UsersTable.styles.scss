@@ -7,12 +7,14 @@
   box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
   border-radius: 4px;
   overflow-x: auto;
-  //   max-height: 640px;
-  //   overflow-y: scroll;
 }
 
 table {
   white-space: nowrap;
+}
+
+tbody {
+  color: variables.$dim-grey;
 }
 
 .ellipsisIcon {
@@ -29,10 +31,6 @@ table {
   font-weight: 600;
   border: 0;
   text-transform: uppercase;
-}
-
-tbody {
-  color: variables.$dim-grey;
 }
 
 .form-dropdown {

@@ -36,6 +36,10 @@
   color: variables.$dim-grey;
 }
 
+.no-underline {
+  text-decoration: none !important;
+}
+
 // for screens smaller than 1500px
 @media (max-width: 1350px) {
   .grid-5 {
@@ -43,7 +47,7 @@
   }
 
   .content {
-    padding: 30px;
+    padding: 30px !important;
   }
 }
 
