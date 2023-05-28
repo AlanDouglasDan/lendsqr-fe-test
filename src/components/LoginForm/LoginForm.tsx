@@ -16,7 +16,7 @@ const LoginForm = () => {
     if (!email || !password) toast.error("Please fill all fields");
     else {
       toast.success("Login Successful");
-      navigate("users");
+      navigate("dashboard");
     }
   };
 
