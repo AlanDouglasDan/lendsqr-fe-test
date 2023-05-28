@@ -13,6 +13,7 @@
   font-weight: 600;
   color: variables.$dim-grey;
   height: 40px;
+  border: none;
 }
 
 .btn-themed {
@@ -22,10 +23,28 @@
   font-weight: 600;
   color: variables.$white;
   height: 40px;
+  border: none;
+}
+
+.btn-themed:hover {
+  background-color: variables.$green2;
+}
+
+.btn-outline:hover {
+  background-color: variables.$light-grey;
 }
 
 .grid-2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 14px;
+}
+
+.dropdown .form-control:focus,
+.dropdown .form-select:focus {
+  color: variables.$dim-grey;
+  background-color: variables.$white;
+  border-color: #9fe7e6;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(57, 205, 204, 0.25);
 }

@@ -142,13 +142,13 @@ const FilterForm: React.FC<Props> = ({
 
       <div className="grid-2 mt-4">
         <button
-          className="btn btn-outline w-100"
+          className="btn-outline w-100"
           onClick={() => resetFilterFunction()}
         >
           Reset
         </button>
         <button
-          className="btn btn-themed w-100"
+          className="btn-themed w-100"
           onClick={() => runFilterFunction()}
         >
           Filter

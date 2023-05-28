@@ -22,6 +22,7 @@ exports[`Login Form Component Test Login Form Component Snapshot 1`] = `
         class="form-group"
       >
         <input
+          autocomplete="off"
           class="form-control"
           data-testid="email"
           id="email"

@@ -63,7 +63,7 @@ const Header: React.FC<Props> = ({ toggleMobileMenu, mobileMenuOpen }) => {
           </div>
 
           <Link to="/dashboard/users" className="no-underline text-dark">
-            <div className="d-flex align-items-center">
+            <div className="d-flex align-items-start">
               <img src={images.union} alt="Union" className="unionImage" />
               <img
                 src={images.lendsqr}
