@@ -48,3 +48,7 @@
 .activePaginationNavigator {
   opacity: 1;
 }
+
+.dropdown-toggle::after {
+  display: none;
+}

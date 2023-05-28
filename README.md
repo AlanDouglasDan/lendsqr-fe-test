@@ -2,6 +2,18 @@
 
 **Lendsqr** is a Lending-as-a-Service solution powers lenders to launch in the shortest possible time, and scale their digital lending business across multiple channels, at the lowest cost.
 
+## Additional Info About The Project
+- Due to the fact that no login endpoint was provided to use, this app accepts any value for email and password provided the fields are not empty. This is to enable the user to login and see the dashboard.
+- The main dashboard page is the users page which is connected with the users endpoint provided. The user can click on an ellipsis of a user and proceed to click View details to see the user details page.
+- The user details page is also connected with the get single user by id endpoint provided with a caching mechanism built in like instructed to store a users details in the local storage so when the page is revisited it will not make another call to the endpoint but rather get the data from the local storage which is a means of optimizing the app.
+- The filter function on the users page is not connected to an api but rather just works with a client side filtering mechanism to filter the users by their organization, username, email and phone number.
+- The pagination bit is also done using client side pagination to slice the users array into pages of whatever the rowsPerPage value is set to, everything on that aspect is also purely dynamic.
+- The sidebar on the dashboard is also mostly static apart from the users menu item that links to the users page and the logout button that logs the user out of the app and redirects them to the login page.
+- Most of the components in the header are also static apart from the logo which just links to the users page.
+- The cards on the users page are dynamically generating those numbers based on information from the api.
+- Because statuses were not returned from the api, I had to create a function that generates a random status for each user and that status is what is displayed on the users page, also those statuses are being managed by state because they can be changed using the action buttons on the menu of each user.
+- On the user details page some of the fields rendered aren't being returned from the api so for those ones i just used static data gotten from the design
+
 # Preview
 
 ### Screenshot
@@ -115,5 +127,5 @@ Initial Release
 
 ## More info
 
-This was done as a FrontEnd Engineering Test Provided by [Alan]
+This was done as a FrontEnd Engineering Test Provided by [Alan](https://github.com/AlanDouglasDan)
 Appreciate the opportunity

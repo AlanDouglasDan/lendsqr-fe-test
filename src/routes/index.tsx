@@ -8,6 +8,7 @@ const AppRouter = () => {
   return (
     <Routes>
       <Route path="/" element={<Login />} />
+      <Route path="/dashboard" element={<Users />} />
       <Route path="/dashboard/users" element={<Users />} />
       <Route path="/dashboard/users/:id" element={<User />} />
       <Route path="*" element={<Users />} />
