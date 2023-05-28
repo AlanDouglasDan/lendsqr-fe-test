@@ -36,6 +36,7 @@ const LoginForm = () => {
             onChange={(e) => setEmail(e.target.value)}
             value={email}
             data-testid="email"
+            autoComplete="off"
           />
         </div>
 

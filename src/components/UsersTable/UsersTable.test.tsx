@@ -7,7 +7,7 @@ describe("Users Table Component Test", () => {
   it("Users Table Component snapshot", () => {
     const { asFragment } = render(
       <BrowserRouter>
-        <UsersTable data={[]} setData={() => {}} fetchUsers={() => {}} />
+        <UsersTable data={[]} fetchUsers={() => {}} />
       </BrowserRouter>
     );
     expect(asFragment()).toMatchSnapshot();

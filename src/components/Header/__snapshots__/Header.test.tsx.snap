@@ -95,7 +95,7 @@ exports[`Header Component Test Header Component Desktop View Snapshot 1`] = `
           href="/dashboard/users"
         >
           <div
-            class="d-flex align-items-center"
+            class="d-flex align-items-start"
           >
             <img
               alt="Union"
@@ -215,7 +215,7 @@ exports[`Header Component Test Header Component Mobile View Snapshot 1`] = `
           href="/dashboard/users"
         >
           <div
-            class="d-flex align-items-center"
+            class="d-flex align-items-start"
           >
             <img
               alt="Union"

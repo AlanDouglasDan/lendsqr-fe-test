@@ -7,9 +7,10 @@
 }
 
 .usersBody .form-control,
-.usersBody .input-group-text {
+.usersBody .input-group-text,
+.usersBody .form-select {
   height: 40px;
-  border-width: 2px;
+  border-width: 1px;
 }
 
 .bg-theme {
@@ -57,11 +58,11 @@
     grid-gap: 25px;
   }
 
-  .lendsqrImage {
+  .usersBody .lendsqrImage {
     width: 90px;
   }
 
-  .unionImage {
+  .usersBody .unionImage {
     width: 15px;
   }
 }

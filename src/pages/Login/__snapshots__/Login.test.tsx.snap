@@ -74,6 +74,7 @@ exports[`Login Page Entire Login Screen Snapshot 1`] = `
               class="form-group"
             >
               <input
+                autocomplete="off"
                 class="form-control"
                 data-testid="email"
                 id="email"

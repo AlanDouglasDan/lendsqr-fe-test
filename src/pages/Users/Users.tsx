@@ -93,7 +93,7 @@ const Users = () => {
               />
             </div>
 
-            <UsersTable data={data} setData={setData} fetchUsers={fetchUsers} />
+            <UsersTable data={data} fetchUsers={fetchUsers} />
           </div>
         ) : (
           <Loader />

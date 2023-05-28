@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 // import useFetch from "../../hooks/useFetch";
 import "./UsersTable.styles.scss";
@@ -6,7 +6,7 @@ import FilterForm from "components/FilterForm/FilterForm";
 import ActionMenu from "components/ActionMenu/ActionMenu";
 import Pagination from "components/Pagination/Pagination";
 import { FilterIcon } from "components/icons";
-import { OPTIONS, TABLE_HEADERS } from '../../constants';
+import { OPTIONS, TABLE_HEADERS } from "../../constants";
 import { UserInterface, FilterInterface } from "types/user.types";
 
 const pending = <span className="light-yellow-btn">Pending</span>;
@@ -25,15 +25,20 @@ const initialState: FilterInterface = {
 
 type Props = {
   data: UserInterface[];
-  setData: (data: any) => void;
   fetchUsers: () => void;
 };
 
-const UsersTable: React.FC<Props> = ({ data, setData, fetchUsers }) => {
+const UsersTable: React.FC<Props> = ({ data, fetchUsers }) => {
   const [rowsPerPage, setRowsPerPage] = useState<number>(10);
   const [page, setPage] = useState<number>(1);
 
+  const [dataFiltered, setDataFiltered] = useState<UserInterface[]>([]);
+
   const [filters, setFilters] = useState<FilterInterface>(initialState);
+
+  useEffect(() => {
+    setDataFiltered(data);
+  }, [data]);
 
   // populate the statuses array randomly with statuses of pending, active, inactive and blacklisted for each user
   const _statusesArray = data.map(() => {
@@ -60,56 +65,24 @@ const UsersTable: React.FC<Props> = ({ data, setData, fetchUsers }) => {
   const numberOfPages = Math.ceil(data.length / rowsPerPage);
 
   const runFilterFunction = () => {
-    let _data;
+    const _data = data.filter((item: any) => {
+      let match = true;
 
-    if (filters.organization !== "")
-      _data = data.filter((item: any) => {
-        return item.orgName === filters.organization;
-      });
+      if (filters.organization)
+        if (item.orgName !== filters.organization) match = false;
 
-    if (filters.username !== "")
-      _data = data.filter((item: any) => {
-        return item.username === filters.username;
-      });
+      if (filters.username)
+        if (item.username !== filters.username) match = false;
 
-    if (filters.email !== "")
-      _data = data.filter((item: any) => {
-        return item.email === filters.email;
-      });
+      if (filters.email) if (item.email !== filters.email) match = false;
 
-    if (filters.phoneNumber !== "")
-      _data = data.filter((item: any) => {
-        return item.phoneNumber === filters.phoneNumber;
-      });
+      if (filters.phoneNumber)
+        if (item.phoneNumber !== filters.phoneNumber) match = false;
 
-    // if (filters.date !== "")
-    //   _data = _data.filter((item: any) => {
-    //     return item.date === filters.date;
-    //   });
+      return match;
+    });
 
-    // if (filters.status !== "")
-    //   _data = _data.filter((item: any) => {
-    //     return item.status === filters.status;
-    //   });
-
-    // const _data = data.filter((item: any) => {
-    //   let match = true;
-
-    //   if (filters.organization)
-    //     if (item.organization !== filters.organization) match = false;
-
-    //   if (filters.username)
-    //     if (item.username !== filters.username) match = false;
-
-    //   if (filters.email) if (item.email !== filters.email) match = false;
-
-    //   if (filters.phoneNumber)
-    //     if (item.phoneNumber !== filters.phoneNumber) match = false;
-
-    //   return match;
-    // });
-
-    setData(_data);
+    setDataFiltered(_data);
   };
 
   const resetFilterFunction = () => {
@@ -148,7 +121,7 @@ const UsersTable: React.FC<Props> = ({ data, setData, fetchUsers }) => {
             </tr>
           </thead>
           <tbody>
-            {data
+            {dataFiltered
               ?.slice(
                 (page - 1) * rowsPerPage,
                 (page - 1) * rowsPerPage + rowsPerPage

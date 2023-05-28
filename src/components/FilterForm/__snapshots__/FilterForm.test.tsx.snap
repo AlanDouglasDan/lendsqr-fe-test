@@ -221,12 +221,12 @@ exports[`Filter Form Component Test Filter Form Component Snapshot 1`] = `
       class="grid-2 mt-4"
     >
       <button
-        class="btn btn-outline w-100"
+        class="btn-outline w-100"
       >
         Reset
       </button>
       <button
-        class="btn btn-themed w-100"
+        class="btn-themed w-100"
       >
         Filter
       </button>
