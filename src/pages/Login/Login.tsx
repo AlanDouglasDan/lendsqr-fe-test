@@ -1,4 +1,4 @@
-import LoginForm from "components/LoginForm/LoginForm";
+import { LoginForm } from "components/LoginForm";
 
 import images from "../../assets/images";
 import "./Login.styles.scss";

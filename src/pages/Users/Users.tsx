@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import axios from "axios";
 
 import {
   PeopleIcon,
@@ -7,35 +6,36 @@ import {
   OrangeLoanIcon,
   RedCoinIcon,
 } from "components/icons";
-import UsersTable from "components/UsersTable/UsersTable";
-import Header from "components/Header/Header";
-import Sidebar from "components/Sidebar/Sidebar";
-import UsersInfoCard from "components/UsersInfoCard/UsersInfoCard";
-import Loader from "components/Loader/Loader";
+import { UsersTable } from "components/UsersTable";
+import { Header } from "components/Header";
+import { Sidebar } from "components/Sidebar";
+import { UsersInfoCard } from "components/UsersInfoCard";
+import { Loader } from "components/Loader";
+
 import { UserInterface } from "types/user.types";
+
 import { API_URLS } from "../../constants";
+
+import fetchData from "queries/fetch";
+
 import "./Users.styles.scss";
 
 const Users = () => {
   const [data, setData] = useState<UserInterface[]>([]);
 
-  const [mobileMenuOpen, setMobileMenuOpen] = useState<Boolean>(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState<boolean>(false);
+
   const toggleMobileMenu = () => setMobileMenuOpen(!mobileMenuOpen);
 
   const fetchUsers = async () => {
-    axios
-      .get(API_URLS.GET_USERS)
-      .then((_data) => {
-        setData(_data.data);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
+    const _data: UserInterface[] = await fetchData(API_URLS.GET_USERS);
+
+    setData(_data);
   };
+  
 
   useEffect(() => {
     fetchUsers();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

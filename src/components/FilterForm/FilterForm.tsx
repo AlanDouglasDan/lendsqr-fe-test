@@ -1,12 +1,16 @@
+import { Popup } from "components/Popup";
+import { Input } from "components/Input";
 import { FilterInterface } from "types/user.types";
 import "./FilterForm.styles.scss";
 
 export interface Props {
   setFilters: (filters: any) => void;
   filters: FilterInterface;
-  _organizations: String[];
+  _organizations: string[];
   runFilterFunction: () => void;
   resetFilterFunction: () => void;
+  isOpen: boolean;
+  onClose: () => void;
 }
 
 const FilterForm: React.FC<Props> = ({
@@ -15,17 +19,19 @@ const FilterForm: React.FC<Props> = ({
   _organizations,
   runFilterFunction,
   resetFilterFunction,
+  isOpen,
+  onClose,
 }) => {
   return (
-    <div className="dropdown-menu p-4 form-dropdown">
+    <Popup className="form-dropdown" isOpen={isOpen} onClose={onClose}>
       <div className="mb-3">
         <label htmlFor="exampleDropdownFormOrganization" className="form-label">
           Organization
         </label>
         <select
-          className="form-select mb-3 form-label"
+          className="form-select mb-3 form-label thick-border"
           aria-label="Default select example"
-          style={{ fontSize: "1rem" }}
+          // style={{ fontSize: "1rem" }}
           onChange={(e) => {
             setFilters({
               ...filters,
@@ -33,6 +39,8 @@ const FilterForm: React.FC<Props> = ({
             });
           }}
           value={filters.organization}
+          id="organization"
+          autoComplete="off"
         >
           <option defaultValue="">Select</option>
           {_organizations?.map((item: any, index: any) => {
@@ -44,40 +52,36 @@ const FilterForm: React.FC<Props> = ({
           })}
         </select>
 
-        <label htmlFor="exampleDropdownFormUsername" className="form-label">
-          Username
-        </label>
-        <input
-          type="text"
-          className="form-control"
-          id="exampleDropdownFormUsername"
-          placeholder="Username"
-          onChange={(e) => {
+        <Input
+          value={filters.username}
+          setValue={(value: string) =>
             setFilters({
               ...filters,
-              username: e.target.value,
-            });
-          }}
-          value={filters.username}
+              username: value,
+            })
+          }
+          type="text"
+          placeholder="Username"
+          id="exampleDropdownFormUsername"
+          label="Username"
+          inputClassName="thick-border"
         />
       </div>
 
       <div className="mb-3">
-        <label htmlFor="exampleDropdownFormEmail2" className="form-label">
-          Email
-        </label>
-        <input
-          type="email"
-          className="form-control"
-          id="exampleDropdownFormEmail2"
-          placeholder="Email"
-          onChange={(e) => {
+        <Input
+          value={filters.email}
+          setValue={(value: string) =>
             setFilters({
               ...filters,
-              email: e.target.value,
-            });
-          }}
-          value={filters.email}
+              email: value,
+            })
+          }
+          type="email"
+          placeholder="Email"
+          id="exampleDropdownFormEmail"
+          label="Email"
+          inputClassName="thick-border"
         />
       </div>
 
@@ -87,7 +91,7 @@ const FilterForm: React.FC<Props> = ({
         </label>
         <input
           type="date"
-          className="form-control"
+          className="form-control thick-border"
           id="datepicker"
           onChange={(e) => {
             setFilters({
@@ -100,21 +104,19 @@ const FilterForm: React.FC<Props> = ({
       </div>
 
       <div className="mb-3">
-        <label htmlFor="exampleDropdownFormPhoneNumber" className="form-label">
-          Phone Number
-        </label>
-        <input
-          type="text"
-          className="form-control"
-          id="exampleDropdownFormPhoneNumber"
-          placeholder="Phone Number"
-          onChange={(e) => {
+        <Input
+          value={filters.phoneNumber}
+          setValue={(value: string) =>
             setFilters({
               ...filters,
-              phoneNumber: e.target.value,
-            });
-          }}
-          value={filters.phoneNumber}
+              phoneNumber: value,
+            })
+          }
+          type="text"
+          placeholder="Phone Number"
+          id="exampleDropdownFormPhoneNumber"
+          label="Phone Number"
+          inputClassName="thick-border"
         />
       </div>
 
@@ -123,9 +125,9 @@ const FilterForm: React.FC<Props> = ({
       </label>
 
       <select
-        className="form-select mb-3 form-label"
+        className="form-select mb-3 form-label thick-border"
         aria-label="Default select example"
-        style={{ fontSize: "1rem" }}
+        // style={{ fontSize: "1rem" }}
         onChange={(e) => {
           setFilters({
             ...filters,
@@ -133,6 +135,7 @@ const FilterForm: React.FC<Props> = ({
           });
         }}
         value={filters.status}
+        id="status"
       >
         <option defaultValue="pending">Pending</option>
         <option value="active">Active</option>
@@ -154,7 +157,7 @@ const FilterForm: React.FC<Props> = ({
           Filter
         </button>
       </div>
-    </div>
+    </Popup>
   );
 };
 

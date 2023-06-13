@@ -1,16 +1,20 @@
 import { useState, useEffect } from "react";
-import axios from "axios";
 import { useParams, Link } from "react-router-dom";
 
 import { BackIcon } from "../../components/icons";
-import Header from "components/Header/Header";
-import Sidebar from "components/Sidebar/Sidebar";
-import "./User.styles.scss";
-import UserProfileCard from "components/UserProfileCard/UserProfileCard";
-import UserDetailsCard from "components/UserDetailsCard/UserDetailsCard";
-import Loader from "components/Loader/Loader";
+import { Header } from "components/Header";
+import { Sidebar } from "components/Sidebar";
+import { UserProfileCard } from "components/UserProfileCard";
+import { UserDetailsCard } from "components/UserDetailsCard";
+import { Loader } from "components/Loader";
+
 import { API_URLS } from "../../constants";
+
 import { UserInterface } from "types/user.types";
+
+import fetchData from "queries/fetch";
+
+import "./User.styles.scss";
 
 const User = (): JSX.Element => {
   const { id } = useParams<string>();
@@ -26,15 +30,10 @@ const User = (): JSX.Element => {
   const toggleMobileMenu = () => setMobileMenuOpen(!mobileMenuOpen);
 
   const fetchUserDetails = async () => {
-    axios
-      .get(`${API_URLS.GET_USERS}/${id}`)
-      .then((_data) => {
-        localStorage.setItem(`user-${id}`, JSON.stringify(_data.data));
-        setData(_data.data);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
+    const _data: UserInterface = await fetchData(`${API_URLS.GET_USERS}/${id}`);
+
+    localStorage.setItem(`user-${id}`, JSON.stringify(_data));
+    setData(_data);
   };
 
   useEffect(() => {

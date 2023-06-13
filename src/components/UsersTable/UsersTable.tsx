@@ -2,9 +2,9 @@ import { useState, useEffect } from "react";
 
 // import useFetch from "../../hooks/useFetch";
 import "./UsersTable.styles.scss";
-import FilterForm from "components/FilterForm/FilterForm";
-import ActionMenu from "components/ActionMenu/ActionMenu";
-import Pagination from "components/Pagination/Pagination";
+import { FilterForm } from "components/FilterForm";
+import { ActionMenu } from "components/ActionMenu";
+import { Pagination } from "components/Pagination";
 import { FilterIcon } from "components/icons";
 import { OPTIONS, TABLE_HEADERS } from "../../constants";
 import { UserInterface, FilterInterface } from "types/user.types";
@@ -32,6 +32,8 @@ const UsersTable: React.FC<Props> = ({ data, fetchUsers }) => {
   const [rowsPerPage, setRowsPerPage] = useState<number>(10);
   const [page, setPage] = useState<number>(1);
 
+  const [filterPopup, setFilterPopup] = useState<boolean>(false);
+
   const [dataFiltered, setDataFiltered] = useState<UserInterface[]>([]);
 
   const [filters, setFilters] = useState<FilterInterface>(initialState);
@@ -39,6 +41,8 @@ const UsersTable: React.FC<Props> = ({ data, fetchUsers }) => {
   useEffect(() => {
     setDataFiltered(data);
   }, [data]);
+
+  console.log(filterPopup);
 
   // populate the statuses array randomly with statuses of pending, active, inactive and blacklisted for each user
   const _statusesArray = data.map(() => {
@@ -55,11 +59,9 @@ const UsersTable: React.FC<Props> = ({ data, fetchUsers }) => {
     useState<Array<JSX.Element>>(_statusesArray);
 
   // look through all the _data and get the organizations
-  const _organizations: String[] = data?.map((item: any) => {
-    return item.orgName;
-  });
+  const _organizations: string[] = data?.map((item: any) => item.orgName);
 
-  // console.log(filters);
+  console.log(filters);
   // console.log(data);
 
   const numberOfPages = Math.ceil(data.length / rowsPerPage);
@@ -102,18 +104,12 @@ const UsersTable: React.FC<Props> = ({ data, fetchUsers }) => {
                     <span>{header}</span>
                     <span className="dropdown">
                       <div
-                        data-bs-toggle="dropdown"
-                        className="dropdown-toggle"
+                        // data-bs-toggle="dropdown"
+                        // className="dropdown-toggle"
+                        onClick={() => setFilterPopup((prev) => !prev)}
                       >
                         <FilterIcon />
                       </div>
-                      <FilterForm
-                        filters={filters}
-                        setFilters={setFilters}
-                        _organizations={_organizations}
-                        resetFilterFunction={resetFilterFunction}
-                        runFilterFunction={runFilterFunction}
-                      />
                     </span>
                   </div>
                 </td>
@@ -198,6 +194,16 @@ const UsersTable: React.FC<Props> = ({ data, fetchUsers }) => {
           </tbody>
         </table>
       </div>
+
+      <FilterForm
+        filters={filters}
+        setFilters={setFilters}
+        _organizations={_organizations}
+        resetFilterFunction={resetFilterFunction}
+        runFilterFunction={runFilterFunction}
+        isOpen={filterPopup}
+        onClose={() => setFilterPopup(false)}
+      />
 
       <Pagination
         page={page}

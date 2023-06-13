@@ -24,7 +24,7 @@ import {
   ClipboardIcon,
   TireIcon,
   LogoutIcon,
-} from "../../components/icons";
+} from "components/icons";
 import "./Sidebar.styles.scss";
 
 type Props = {
