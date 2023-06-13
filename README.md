@@ -71,7 +71,7 @@ Here is a brief explanation of the template folder structure and some of its mai
 │   └── components   # Contains important Re-useable data
 │   └── pages        # Files for site pages (.tsx)
 │   └── constants    # Basic reusable constants utilized
-│   └── hooks        # Contains functions for making API calls
+│   └── queries      # Contains functions for making API calls
 │   └── routes       # Defines all the routes for the app
 │   └── types        # Has all the predefined interfaces for variables and functions in the app
 │   └── utils        # Contains helper functions for some logic in the app

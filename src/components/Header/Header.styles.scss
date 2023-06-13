@@ -70,22 +70,22 @@
   transition: all 0.25s;
   position: relative;
   background-color: transparent;
+}
 
-  .open {
-    transform: rotate(90deg);
-    transform: translateY(0px);
+.open {
+  transform: rotate(90deg);
+  transform: translateY(0px);
 
-    .hamburger-top {
-      transform: rotate(45deg) translateY(6px) translate(6px);
-    }
+  .hamburger-top {
+    transform: rotate(45deg) translateY(6px) translate(6px);
+  }
 
-    .hamburger-middle {
-      display: none;
-    }
+  .hamburger-middle {
+    display: none;
+  }
 
-    .hamburger-bottom {
-      transform: rotate(-45deg) translateY(6px) translate(-6px);
-    }
+  .hamburger-bottom {
+    transform: rotate(-45deg) translateY(6px) translate(-6px);
   }
 }
 

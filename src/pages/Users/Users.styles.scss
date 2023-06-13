@@ -22,6 +22,7 @@
     width: calc(100% - 283px);
     height: calc(100vh - 100px);
     overflow-y: scroll;
+    position: relative;
 
     .headerText {
       font-size: 24px;
@@ -64,6 +65,11 @@
 
   .usersBody .unionImage {
     width: 15px !important;
+  }
+
+  .form-dropdown {
+    top: 35rem;
+    left: calc(30px + 0.95rem);
   }
 }
 
@@ -108,5 +114,10 @@
 @media (max-width: 500px) {
   .grid-4 {
     grid-template-columns: 1fr !important;
+  }
+
+  .form-dropdown {
+    top: auto;
+    bottom: -40rem;
   }
 }

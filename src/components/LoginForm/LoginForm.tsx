@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 
+import { Input } from "components/Input";
 import "./LoginForm.styles.scss";
+import { PasswordInput } from "components/PasswordInput";
 
 const LoginForm = () => {
   const [showPassword, setShowPassword] = useState<boolean>(false);
@@ -27,38 +29,22 @@ const LoginForm = () => {
       <div className="welcomeText2">Enter details to login.</div>
 
       <div className="minWidth w-lg-100">
-        <div className="form-group">
-          <input
-            type="email"
-            className="form-control"
-            id="email"
-            placeholder="Enter email"
-            onChange={(e) => setEmail(e.target.value)}
-            value={email}
-            data-testid="email"
-            autoComplete="off"
-          />
-        </div>
+        <Input
+          value={email}
+          setValue={setEmail}
+          type="email"
+          placeholder="Enter email"
+          id="email"
+        />
 
-        <div className="form-group">
-          <div className="input-group my-4 form-control p-0">
-            <input
-              type={!showPassword ? "password" : "text"}
-              className="form-control border-0"
-              placeholder="Password"
-              aria-label="password"
-              onChange={(e) => setPassword(e.target.value)}
-              value={password}
-              data-testid="password"
-            />
-            <span
-              className="input-group-text bg-white showText m-0 border-0"
-              onClick={() => setShowPassword(!showPassword)}
-            >
-              {!showPassword ? "SHOW" : "HIDE"}
-            </span>
-          </div>
-        </div>
+        <PasswordInput
+          password={password}
+          setPassword={setPassword}
+          showPassword={showPassword}
+          setShowPassword={setShowPassword}
+          placeholder="Password"
+          id="password"
+        />
 
         <div className="forgotPassword">FORGOT PASSWORD?</div>
 

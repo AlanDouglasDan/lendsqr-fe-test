@@ -21,10 +21,12 @@ const Header: React.FC<Props> = ({ toggleMobileMenu, mobileMenuOpen }) => {
 
         <div className="input-group my-4 border-0">
           <input
-            type="text"
+            type="search"
             className="form-control border-right-0"
             placeholder="Search for anything"
             aria-label="search"
+            id="search"
+            autoComplete="off"
           />
           <span className="input-group-text bg-theme text-white border-0">
             <i className="fa fa-search" />

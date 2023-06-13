@@ -1,0 +1,49 @@
+@use "variables";
+
+.form-group {
+  .form-control {
+    border-color: rgba(84, 95, 125, 0.15);
+    padding: 16px;
+    font-size: 14px;
+    color: variables.$dim-grey;
+    border-width: 2px;
+  }
+
+  .form-control::placeholder {
+    color: variables.$dim-grey;
+    font-size: 14px;
+    opacity: 0.6;
+  }
+
+  .form-control:focus {
+    color: variables.$dim-grey;
+    background-color: variables.$white;
+    border-color: #9fe7e6;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(57, 205, 204, 0.25);
+  }
+
+  .input-group .form-control:focus {
+    box-shadow: none;
+  }
+
+  .form-label {
+    color: variables.$dim-grey;
+    font-weight: 500;
+    font-size: 14px;
+  }
+}
+
+.thick-border {
+  border: 1px solid rgba(33, 63, 125, 0.2) !important;
+  border-radius: 8px;
+}
+
+.thick-border:focus {
+  color: variables.$dim-grey;
+  background-color: variables.$white;
+  border-color: #9fe7e6;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(57, 205, 204, 0.25);
+  border: none !important;
+}

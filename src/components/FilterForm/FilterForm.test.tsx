@@ -14,6 +14,8 @@ describe("Filter Form Component Test", () => {
           runFilterFunction={() => {}}
           resetFilterFunction={() => {}}
           _organizations={DUMMY_ORGANIZATION_DATA}
+          isOpen={true}
+          onClose={() => {}}
         />
       </BrowserRouter>
     );
