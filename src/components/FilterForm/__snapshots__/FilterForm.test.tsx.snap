@@ -3,233 +3,254 @@
 exports[`Filter Form Component Test Filter Form Component Snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="dropdown-menu p-4 form-dropdown"
+    class="form-dropdown dropdown-menu show p-4"
   >
-    <div
-      class="mb-3"
-    >
+    <div>
+      <div
+        class="mb-3"
+      >
+        <label
+          class="form-label"
+          for="exampleDropdownFormOrganization"
+        >
+          Organization
+        </label>
+        <select
+          aria-label="Default select example"
+          autocomplete="off"
+          class="form-select mb-3 form-label thick-border"
+          id="organization"
+        >
+          <option>
+            Select
+          </option>
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+          <option />
+        </select>
+        <div
+          class="form-group"
+        >
+          <label
+            class="form-label"
+            for="exampleDropdownFormValue2exampleDropdownFormUsername"
+          >
+            Username
+          </label>
+          <input
+            autocomplete="off"
+            class="form-control thick-border"
+            data-testid="exampleDropdownFormUsername"
+            id="exampleDropdownFormUsername"
+            placeholder="Username"
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+      <div
+        class="mb-3"
+      >
+        <div
+          class="form-group"
+        >
+          <label
+            class="form-label"
+            for="exampleDropdownFormValue2exampleDropdownFormEmail"
+          >
+            Email
+          </label>
+          <input
+            autocomplete="off"
+            class="form-control thick-border"
+            data-testid="exampleDropdownFormEmail"
+            id="exampleDropdownFormEmail"
+            placeholder="Email"
+            type="email"
+            value=""
+          />
+        </div>
+      </div>
+      <div
+        class="mb-3"
+      >
+        <label
+          class="form-label"
+          for="datepicker"
+        >
+          Date
+        </label>
+        <input
+          class="form-control thick-border"
+          id="datepicker"
+          type="date"
+          value=""
+        />
+      </div>
+      <div
+        class="mb-3"
+      >
+        <div
+          class="form-group"
+        >
+          <label
+            class="form-label"
+            for="exampleDropdownFormValue2exampleDropdownFormPhoneNumber"
+          >
+            Phone Number
+          </label>
+          <input
+            autocomplete="off"
+            class="form-control thick-border"
+            data-testid="exampleDropdownFormPhoneNumber"
+            id="exampleDropdownFormPhoneNumber"
+            placeholder="Phone Number"
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
       <label
         class="form-label"
-        for="exampleDropdownFormOrganization"
+        for="exampleDropdownFormStatus"
       >
-        Organization
+        Status
       </label>
       <select
         aria-label="Default select example"
-        class="form-select mb-3 form-label"
-        style="font-size: 1rem;"
+        class="form-select mb-3 form-label thick-border"
+        id="status"
       >
         <option>
-          Select
+          Pending
         </option>
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
-        <option />
+        <option
+          value="active"
+        >
+          Active
+        </option>
+        <option
+          value="inactive"
+        >
+          Inactive
+        </option>
+        <option
+          value="blacklisted"
+        >
+          Blacklisted
+        </option>
       </select>
-      <label
-        class="form-label"
-        for="exampleDropdownFormUsername"
+      <div
+        class="grid-2 mt-4"
       >
-        Username
-      </label>
-      <input
-        class="form-control"
-        id="exampleDropdownFormUsername"
-        placeholder="Username"
-        type="text"
-        value=""
-      />
-    </div>
-    <div
-      class="mb-3"
-    >
-      <label
-        class="form-label"
-        for="exampleDropdownFormEmail2"
-      >
-        Email
-      </label>
-      <input
-        class="form-control"
-        id="exampleDropdownFormEmail2"
-        placeholder="Email"
-        type="email"
-        value=""
-      />
-    </div>
-    <div
-      class="mb-3"
-    >
-      <label
-        class="form-label"
-        for="datepicker"
-      >
-        Date
-      </label>
-      <input
-        class="form-control"
-        id="datepicker"
-        type="date"
-        value=""
-      />
-    </div>
-    <div
-      class="mb-3"
-    >
-      <label
-        class="form-label"
-        for="exampleDropdownFormPhoneNumber"
-      >
-        Phone Number
-      </label>
-      <input
-        class="form-control"
-        id="exampleDropdownFormPhoneNumber"
-        placeholder="Phone Number"
-        type="text"
-        value=""
-      />
-    </div>
-    <label
-      class="form-label"
-      for="exampleDropdownFormStatus"
-    >
-      Status
-    </label>
-    <select
-      aria-label="Default select example"
-      class="form-select mb-3 form-label"
-      style="font-size: 1rem;"
-    >
-      <option>
-        Pending
-      </option>
-      <option
-        value="active"
-      >
-        Active
-      </option>
-      <option
-        value="inactive"
-      >
-        Inactive
-      </option>
-      <option
-        value="blacklisted"
-      >
-        Blacklisted
-      </option>
-    </select>
-    <div
-      class="grid-2 mt-4"
-    >
-      <button
-        class="btn-outline w-100"
-      >
-        Reset
-      </button>
-      <button
-        class="btn-themed w-100"
-      >
-        Filter
-      </button>
+        <button
+          class="btn-outline w-100"
+        >
+          Reset
+        </button>
+        <button
+          class="btn-themed w-100"
+        >
+          Filter
+        </button>
+      </div>
     </div>
   </div>
 </DocumentFragment>
