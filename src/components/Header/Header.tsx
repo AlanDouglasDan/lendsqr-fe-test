@@ -11,15 +11,15 @@ type Props = {
 const Header: React.FC<Props> = ({ toggleMobileMenu, mobileMenuOpen }) => {
   return (
     <div className="header row m-0">
-      <div className="col-md-6 d-flex align-items-center justify-content-between px-0 d-med-none">
-        <Link to="/dashboard/users" className="no-underline text-dark">
+      <div className="col-md-6 d-flex align-items-center px-0 d-med-none">
+        <Link to="/dashboard/users" className="no-underline text-dark me-5">
           <div className="d-flex align-items-start">
             <img src={images.union} alt="Union" className="unionImage" />
             <img src={images.lendsqr} alt="Lendsqr" className="lendsqrImage" />
           </div>
         </Link>
 
-        <div className="input-group my-4 border-0">
+        <div className="input-group my-4 border-0 ms-3">
           <input
             type="search"
             className="form-control border-right-0"
