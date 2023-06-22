@@ -6,10 +6,10 @@ exports[`Header Component Test Header Component Desktop View Snapshot 1`] = `
     class="header row m-0"
   >
     <div
-      class="col-md-6 d-flex align-items-center justify-content-between px-0 d-med-none"
+      class="col-md-6 d-flex align-items-center px-0 d-med-none"
     >
       <a
-        class="no-underline text-dark"
+        class="no-underline text-dark me-168"
         href="/dashboard/users"
       >
         <div
@@ -32,9 +32,11 @@ exports[`Header Component Test Header Component Desktop View Snapshot 1`] = `
       >
         <input
           aria-label="search"
+          autocomplete="off"
           class="form-control border-right-0"
+          id="search"
           placeholder="Search for anything"
-          type="text"
+          type="search"
         />
         <span
           class="input-group-text bg-theme text-white border-0"
@@ -126,10 +128,10 @@ exports[`Header Component Test Header Component Mobile View Snapshot 1`] = `
     class="header row m-0"
   >
     <div
-      class="col-md-6 d-flex align-items-center justify-content-between px-0 d-med-none"
+      class="col-md-6 d-flex align-items-center px-0 d-med-none"
     >
       <a
-        class="no-underline text-dark"
+        class="no-underline text-dark me-168"
         href="/dashboard/users"
       >
         <div
@@ -152,9 +154,11 @@ exports[`Header Component Test Header Component Mobile View Snapshot 1`] = `
       >
         <input
           aria-label="search"
+          autocomplete="off"
           class="form-control border-right-0"
+          id="search"
           placeholder="Search for anything"
-          type="text"
+          type="search"
         />
         <span
           class="input-group-text bg-theme text-white border-0"

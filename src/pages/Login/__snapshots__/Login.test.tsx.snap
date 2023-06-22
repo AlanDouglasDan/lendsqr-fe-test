@@ -75,7 +75,7 @@ exports[`Login Page Entire Login Screen Snapshot 1`] = `
             >
               <input
                 autocomplete="off"
-                class="form-control"
+                class="form-control undefined"
                 data-testid="email"
                 id="email"
                 placeholder="Enter email"

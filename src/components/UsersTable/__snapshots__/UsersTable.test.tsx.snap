@@ -22,10 +22,7 @@ exports[`Users Table Component Test Users Table Component snapshot 1`] = `
               <span
                 class="dropdown"
               >
-                <div
-                  class="dropdown-toggle"
-                  data-bs-toggle="dropdown"
-                >
+                <div>
                   <svg
                     class="ms-2 cursor-pointer"
                     fill="none"
@@ -39,136 +36,6 @@ exports[`Users Table Component Test Users Table Component snapshot 1`] = `
                       fill="#545F7D"
                     />
                   </svg>
-                </div>
-                <div
-                  class="dropdown-menu p-4 form-dropdown"
-                >
-                  <div
-                    class="mb-3"
-                  >
-                    <label
-                      class="form-label"
-                      for="exampleDropdownFormOrganization"
-                    >
-                      Organization
-                    </label>
-                    <select
-                      aria-label="Default select example"
-                      class="form-select mb-3 form-label"
-                      style="font-size: 1rem;"
-                    >
-                      <option>
-                        Select
-                      </option>
-                    </select>
-                    <label
-                      class="form-label"
-                      for="exampleDropdownFormUsername"
-                    >
-                      Username
-                    </label>
-                    <input
-                      class="form-control"
-                      id="exampleDropdownFormUsername"
-                      placeholder="Username"
-                      type="text"
-                      value=""
-                    />
-                  </div>
-                  <div
-                    class="mb-3"
-                  >
-                    <label
-                      class="form-label"
-                      for="exampleDropdownFormEmail2"
-                    >
-                      Email
-                    </label>
-                    <input
-                      class="form-control"
-                      id="exampleDropdownFormEmail2"
-                      placeholder="Email"
-                      type="email"
-                      value=""
-                    />
-                  </div>
-                  <div
-                    class="mb-3"
-                  >
-                    <label
-                      class="form-label"
-                      for="datepicker"
-                    >
-                      Date
-                    </label>
-                    <input
-                      class="form-control"
-                      id="datepicker"
-                      type="date"
-                      value=""
-                    />
-                  </div>
-                  <div
-                    class="mb-3"
-                  >
-                    <label
-                      class="form-label"
-                      for="exampleDropdownFormPhoneNumber"
-                    >
-                      Phone Number
-                    </label>
-                    <input
-                      class="form-control"
-                      id="exampleDropdownFormPhoneNumber"
-                      placeholder="Phone Number"
-                      type="text"
-                      value=""
-                    />
-                  </div>
-                  <label
-                    class="form-label"
-                    for="exampleDropdownFormStatus"
-                  >
-                    Status
-                  </label>
-                  <select
-                    aria-label="Default select example"
-                    class="form-select mb-3 form-label"
-                    style="font-size: 1rem;"
-                  >
-                    <option>
-                      Pending
-                    </option>
-                    <option
-                      value="active"
-                    >
-                      Active
-                    </option>
-                    <option
-                      value="inactive"
-                    >
-                      Inactive
-                    </option>
-                    <option
-                      value="blacklisted"
-                    >
-                      Blacklisted
-                    </option>
-                  </select>
-                  <div
-                    class="grid-2 mt-4"
-                  >
-                    <button
-                      class="btn-outline w-100"
-                    >
-                      Reset
-                    </button>
-                    <button
-                      class="btn-themed w-100"
-                    >
-                      Filter
-                    </button>
-                  </div>
                 </div>
               </span>
             </div>
@@ -185,10 +52,7 @@ exports[`Users Table Component Test Users Table Component snapshot 1`] = `
               <span
                 class="dropdown"
               >
-                <div
-                  class="dropdown-toggle"
-                  data-bs-toggle="dropdown"
-                >
+                <div>
                   <svg
                     class="ms-2 cursor-pointer"
                     fill="none"
@@ -202,136 +66,6 @@ exports[`Users Table Component Test Users Table Component snapshot 1`] = `
                       fill="#545F7D"
                     />
                   </svg>
-                </div>
-                <div
-                  class="dropdown-menu p-4 form-dropdown"
-                >
-                  <div
-                    class="mb-3"
-                  >
-                    <label
-                      class="form-label"
-                      for="exampleDropdownFormOrganization"
-                    >
-                      Organization
-                    </label>
-                    <select
-                      aria-label="Default select example"
-                      class="form-select mb-3 form-label"
-                      style="font-size: 1rem;"
-                    >
-                      <option>
-                        Select
-                      </option>
-                    </select>
-                    <label
-                      class="form-label"
-                      for="exampleDropdownFormUsername"
-                    >
-                      Username
-                    </label>
-                    <input
-                      class="form-control"
-                      id="exampleDropdownFormUsername"
-                      placeholder="Username"
-                      type="text"
-                      value=""
-                    />
-                  </div>
-                  <div
-                    class="mb-3"
-                  >
-                    <label
-                      class="form-label"
-                      for="exampleDropdownFormEmail2"
-                    >
-                      Email
-                    </label>
-                    <input
-                      class="form-control"
-                      id="exampleDropdownFormEmail2"
-                      placeholder="Email"
-                      type="email"
-                      value=""
-                    />
-                  </div>
-                  <div
-                    class="mb-3"
-                  >
-                    <label
-                      class="form-label"
-                      for="datepicker"
-                    >
-                      Date
-                    </label>
-                    <input
-                      class="form-control"
-                      id="datepicker"
-                      type="date"
-                      value=""
-                    />
-                  </div>
-                  <div
-                    class="mb-3"
-                  >
-                    <label
-                      class="form-label"
-                      for="exampleDropdownFormPhoneNumber"
-                    >
-                      Phone Number
-                    </label>
-                    <input
-                      class="form-control"
-                      id="exampleDropdownFormPhoneNumber"
-                      placeholder="Phone Number"
-                      type="text"
-                      value=""
-                    />
-                  </div>
-                  <label
-                    class="form-label"
-                    for="exampleDropdownFormStatus"
-                  >
-                    Status
-                  </label>
-                  <select
-                    aria-label="Default select example"
-                    class="form-select mb-3 form-label"
-                    style="font-size: 1rem;"
-                  >
-                    <option>
-                      Pending
-                    </option>
-                    <option
-                      value="active"
-                    >
-                      Active
-                    </option>
-                    <option
-                      value="inactive"
-                    >
-                      Inactive
-                    </option>
-                    <option
-                      value="blacklisted"
-                    >
-                      Blacklisted
-                    </option>
-                  </select>
-                  <div
-                    class="grid-2 mt-4"
-                  >
-                    <button
-                      class="btn-outline w-100"
-                    >
-                      Reset
-                    </button>
-                    <button
-                      class="btn-themed w-100"
-                    >
-                      Filter
-                    </button>
-                  </div>
                 </div>
               </span>
             </div>
@@ -348,10 +82,7 @@ exports[`Users Table Component Test Users Table Component snapshot 1`] = `
               <span
                 class="dropdown"
               >
-                <div
-                  class="dropdown-toggle"
-                  data-bs-toggle="dropdown"
-                >
+                <div>
                   <svg
                     class="ms-2 cursor-pointer"
                     fill="none"
@@ -365,136 +96,6 @@ exports[`Users Table Component Test Users Table Component snapshot 1`] = `
                       fill="#545F7D"
                     />
                   </svg>
-                </div>
-                <div
-                  class="dropdown-menu p-4 form-dropdown"
-                >
-                  <div
-                    class="mb-3"
-                  >
-                    <label
-                      class="form-label"
-                      for="exampleDropdownFormOrganization"
-                    >
-                      Organization
-                    </label>
-                    <select
-                      aria-label="Default select example"
-                      class="form-select mb-3 form-label"
-                      style="font-size: 1rem;"
-                    >
-                      <option>
-                        Select
-                      </option>
-                    </select>
-                    <label
-                      class="form-label"
-                      for="exampleDropdownFormUsername"
-                    >
-                      Username
-                    </label>
-                    <input
-                      class="form-control"
-                      id="exampleDropdownFormUsername"
-                      placeholder="Username"
-                      type="text"
-                      value=""
-                    />
-                  </div>
-                  <div
-                    class="mb-3"
-                  >
-                    <label
-                      class="form-label"
-                      for="exampleDropdownFormEmail2"
-                    >
-                      Email
-                    </label>
-                    <input
-                      class="form-control"
-                      id="exampleDropdownFormEmail2"
-                      placeholder="Email"
-                      type="email"
-                      value=""
-                    />
-                  </div>
-                  <div
-                    class="mb-3"
-                  >
-                    <label
-                      class="form-label"
-                      for="datepicker"
-                    >
-                      Date
-                    </label>
-                    <input
-                      class="form-control"
-                      id="datepicker"
-                      type="date"
-                      value=""
-                    />
-                  </div>
-                  <div
-                    class="mb-3"
-                  >
-                    <label
-                      class="form-label"
-                      for="exampleDropdownFormPhoneNumber"
-                    >
-                      Phone Number
-                    </label>
-                    <input
-                      class="form-control"
-                      id="exampleDropdownFormPhoneNumber"
-                      placeholder="Phone Number"
-                      type="text"
-                      value=""
-                    />
-                  </div>
-                  <label
-                    class="form-label"
-                    for="exampleDropdownFormStatus"
-                  >
-                    Status
-                  </label>
-                  <select
-                    aria-label="Default select example"
-                    class="form-select mb-3 form-label"
-                    style="font-size: 1rem;"
-                  >
-                    <option>
-                      Pending
-                    </option>
-                    <option
-                      value="active"
-                    >
-                      Active
-                    </option>
-                    <option
-                      value="inactive"
-                    >
-                      Inactive
-                    </option>
-                    <option
-                      value="blacklisted"
-                    >
-                      Blacklisted
-                    </option>
-                  </select>
-                  <div
-                    class="grid-2 mt-4"
-                  >
-                    <button
-                      class="btn-outline w-100"
-                    >
-                      Reset
-                    </button>
-                    <button
-                      class="btn-themed w-100"
-                    >
-                      Filter
-                    </button>
-                  </div>
                 </div>
               </span>
             </div>
@@ -511,10 +112,7 @@ exports[`Users Table Component Test Users Table Component snapshot 1`] = `
               <span
                 class="dropdown"
               >
-                <div
-                  class="dropdown-toggle"
-                  data-bs-toggle="dropdown"
-                >
+                <div>
                   <svg
                     class="ms-2 cursor-pointer"
                     fill="none"
@@ -528,136 +126,6 @@ exports[`Users Table Component Test Users Table Component snapshot 1`] = `
                       fill="#545F7D"
                     />
                   </svg>
-                </div>
-                <div
-                  class="dropdown-menu p-4 form-dropdown"
-                >
-                  <div
-                    class="mb-3"
-                  >
-                    <label
-                      class="form-label"
-                      for="exampleDropdownFormOrganization"
-                    >
-                      Organization
-                    </label>
-                    <select
-                      aria-label="Default select example"
-                      class="form-select mb-3 form-label"
-                      style="font-size: 1rem;"
-                    >
-                      <option>
-                        Select
-                      </option>
-                    </select>
-                    <label
-                      class="form-label"
-                      for="exampleDropdownFormUsername"
-                    >
-                      Username
-                    </label>
-                    <input
-                      class="form-control"
-                      id="exampleDropdownFormUsername"
-                      placeholder="Username"
-                      type="text"
-                      value=""
-                    />
-                  </div>
-                  <div
-                    class="mb-3"
-                  >
-                    <label
-                      class="form-label"
-                      for="exampleDropdownFormEmail2"
-                    >
-                      Email
-                    </label>
-                    <input
-                      class="form-control"
-                      id="exampleDropdownFormEmail2"
-                      placeholder="Email"
-                      type="email"
-                      value=""
-                    />
-                  </div>
-                  <div
-                    class="mb-3"
-                  >
-                    <label
-                      class="form-label"
-                      for="datepicker"
-                    >
-                      Date
-                    </label>
-                    <input
-                      class="form-control"
-                      id="datepicker"
-                      type="date"
-                      value=""
-                    />
-                  </div>
-                  <div
-                    class="mb-3"
-                  >
-                    <label
-                      class="form-label"
-                      for="exampleDropdownFormPhoneNumber"
-                    >
-                      Phone Number
-                    </label>
-                    <input
-                      class="form-control"
-                      id="exampleDropdownFormPhoneNumber"
-                      placeholder="Phone Number"
-                      type="text"
-                      value=""
-                    />
-                  </div>
-                  <label
-                    class="form-label"
-                    for="exampleDropdownFormStatus"
-                  >
-                    Status
-                  </label>
-                  <select
-                    aria-label="Default select example"
-                    class="form-select mb-3 form-label"
-                    style="font-size: 1rem;"
-                  >
-                    <option>
-                      Pending
-                    </option>
-                    <option
-                      value="active"
-                    >
-                      Active
-                    </option>
-                    <option
-                      value="inactive"
-                    >
-                      Inactive
-                    </option>
-                    <option
-                      value="blacklisted"
-                    >
-                      Blacklisted
-                    </option>
-                  </select>
-                  <div
-                    class="grid-2 mt-4"
-                  >
-                    <button
-                      class="btn-outline w-100"
-                    >
-                      Reset
-                    </button>
-                    <button
-                      class="btn-themed w-100"
-                    >
-                      Filter
-                    </button>
-                  </div>
                 </div>
               </span>
             </div>
@@ -674,10 +142,7 @@ exports[`Users Table Component Test Users Table Component snapshot 1`] = `
               <span
                 class="dropdown"
               >
-                <div
-                  class="dropdown-toggle"
-                  data-bs-toggle="dropdown"
-                >
+                <div>
                   <svg
                     class="ms-2 cursor-pointer"
                     fill="none"
@@ -691,136 +156,6 @@ exports[`Users Table Component Test Users Table Component snapshot 1`] = `
                       fill="#545F7D"
                     />
                   </svg>
-                </div>
-                <div
-                  class="dropdown-menu p-4 form-dropdown"
-                >
-                  <div
-                    class="mb-3"
-                  >
-                    <label
-                      class="form-label"
-                      for="exampleDropdownFormOrganization"
-                    >
-                      Organization
-                    </label>
-                    <select
-                      aria-label="Default select example"
-                      class="form-select mb-3 form-label"
-                      style="font-size: 1rem;"
-                    >
-                      <option>
-                        Select
-                      </option>
-                    </select>
-                    <label
-                      class="form-label"
-                      for="exampleDropdownFormUsername"
-                    >
-                      Username
-                    </label>
-                    <input
-                      class="form-control"
-                      id="exampleDropdownFormUsername"
-                      placeholder="Username"
-                      type="text"
-                      value=""
-                    />
-                  </div>
-                  <div
-                    class="mb-3"
-                  >
-                    <label
-                      class="form-label"
-                      for="exampleDropdownFormEmail2"
-                    >
-                      Email
-                    </label>
-                    <input
-                      class="form-control"
-                      id="exampleDropdownFormEmail2"
-                      placeholder="Email"
-                      type="email"
-                      value=""
-                    />
-                  </div>
-                  <div
-                    class="mb-3"
-                  >
-                    <label
-                      class="form-label"
-                      for="datepicker"
-                    >
-                      Date
-                    </label>
-                    <input
-                      class="form-control"
-                      id="datepicker"
-                      type="date"
-                      value=""
-                    />
-                  </div>
-                  <div
-                    class="mb-3"
-                  >
-                    <label
-                      class="form-label"
-                      for="exampleDropdownFormPhoneNumber"
-                    >
-                      Phone Number
-                    </label>
-                    <input
-                      class="form-control"
-                      id="exampleDropdownFormPhoneNumber"
-                      placeholder="Phone Number"
-                      type="text"
-                      value=""
-                    />
-                  </div>
-                  <label
-                    class="form-label"
-                    for="exampleDropdownFormStatus"
-                  >
-                    Status
-                  </label>
-                  <select
-                    aria-label="Default select example"
-                    class="form-select mb-3 form-label"
-                    style="font-size: 1rem;"
-                  >
-                    <option>
-                      Pending
-                    </option>
-                    <option
-                      value="active"
-                    >
-                      Active
-                    </option>
-                    <option
-                      value="inactive"
-                    >
-                      Inactive
-                    </option>
-                    <option
-                      value="blacklisted"
-                    >
-                      Blacklisted
-                    </option>
-                  </select>
-                  <div
-                    class="grid-2 mt-4"
-                  >
-                    <button
-                      class="btn-outline w-100"
-                    >
-                      Reset
-                    </button>
-                    <button
-                      class="btn-themed w-100"
-                    >
-                      Filter
-                    </button>
-                  </div>
                 </div>
               </span>
             </div>
@@ -837,10 +172,7 @@ exports[`Users Table Component Test Users Table Component snapshot 1`] = `
               <span
                 class="dropdown"
               >
-                <div
-                  class="dropdown-toggle"
-                  data-bs-toggle="dropdown"
-                >
+                <div>
                   <svg
                     class="ms-2 cursor-pointer"
                     fill="none"
@@ -854,136 +186,6 @@ exports[`Users Table Component Test Users Table Component snapshot 1`] = `
                       fill="#545F7D"
                     />
                   </svg>
-                </div>
-                <div
-                  class="dropdown-menu p-4 form-dropdown"
-                >
-                  <div
-                    class="mb-3"
-                  >
-                    <label
-                      class="form-label"
-                      for="exampleDropdownFormOrganization"
-                    >
-                      Organization
-                    </label>
-                    <select
-                      aria-label="Default select example"
-                      class="form-select mb-3 form-label"
-                      style="font-size: 1rem;"
-                    >
-                      <option>
-                        Select
-                      </option>
-                    </select>
-                    <label
-                      class="form-label"
-                      for="exampleDropdownFormUsername"
-                    >
-                      Username
-                    </label>
-                    <input
-                      class="form-control"
-                      id="exampleDropdownFormUsername"
-                      placeholder="Username"
-                      type="text"
-                      value=""
-                    />
-                  </div>
-                  <div
-                    class="mb-3"
-                  >
-                    <label
-                      class="form-label"
-                      for="exampleDropdownFormEmail2"
-                    >
-                      Email
-                    </label>
-                    <input
-                      class="form-control"
-                      id="exampleDropdownFormEmail2"
-                      placeholder="Email"
-                      type="email"
-                      value=""
-                    />
-                  </div>
-                  <div
-                    class="mb-3"
-                  >
-                    <label
-                      class="form-label"
-                      for="datepicker"
-                    >
-                      Date
-                    </label>
-                    <input
-                      class="form-control"
-                      id="datepicker"
-                      type="date"
-                      value=""
-                    />
-                  </div>
-                  <div
-                    class="mb-3"
-                  >
-                    <label
-                      class="form-label"
-                      for="exampleDropdownFormPhoneNumber"
-                    >
-                      Phone Number
-                    </label>
-                    <input
-                      class="form-control"
-                      id="exampleDropdownFormPhoneNumber"
-                      placeholder="Phone Number"
-                      type="text"
-                      value=""
-                    />
-                  </div>
-                  <label
-                    class="form-label"
-                    for="exampleDropdownFormStatus"
-                  >
-                    Status
-                  </label>
-                  <select
-                    aria-label="Default select example"
-                    class="form-select mb-3 form-label"
-                    style="font-size: 1rem;"
-                  >
-                    <option>
-                      Pending
-                    </option>
-                    <option
-                      value="active"
-                    >
-                      Active
-                    </option>
-                    <option
-                      value="inactive"
-                    >
-                      Inactive
-                    </option>
-                    <option
-                      value="blacklisted"
-                    >
-                      Blacklisted
-                    </option>
-                  </select>
-                  <div
-                    class="grid-2 mt-4"
-                  >
-                    <button
-                      class="btn-outline w-100"
-                    >
-                      Reset
-                    </button>
-                    <button
-                      class="btn-themed w-100"
-                    >
-                      Filter
-                    </button>
-                  </div>
                 </div>
               </span>
             </div>
